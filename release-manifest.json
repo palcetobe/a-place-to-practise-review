@@ -1,0 +1,1199 @@
+{
+  "schema": "public-written-review-v1",
+  "releaseDate": "2026-11-04",
+  "status": "review-draft",
+  "clinicalAcceptance": false,
+  "browserAcceptance": false,
+  "integratedNarration": false,
+  "catalogueCards": 83,
+  "implementationEntries": 39,
+  "libraryEntrypoints": 54,
+  "files": {
+    ".nojekyll": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "accepting-uncertainty/content.js": {
+      "sha256": "9a18413755d247a1b5a83b4685129343a6a07c4379941499c912ef70aadc6179",
+      "bytes": 20226
+    },
+    "accepting-uncertainty/index.html": {
+      "sha256": "dd7c0395090a33fe27b54bf39caf12d1c3b7fa8f4e200e4600941e1b44e930db",
+      "bytes": 1452
+    },
+    "accumulating-positive-emotions/content.js": {
+      "sha256": "5aa7a164eb7ca33520030d046c0a22ba633e19f1c5684c86bd3485044e34b3ed",
+      "bytes": 45872
+    },
+    "accumulating-positive-emotions/index.html": {
+      "sha256": "19f532186c58d861d54b84cd5f0470defd86a1762acf7a275382f12ab680709d",
+      "bytes": 1204
+    },
+    "app.js": {
+      "sha256": "7be588fcc7c94e49101c1d7e3cc22ad4b0a0d353e9974fbbdf8f91894f820ebf",
+      "bytes": 25821
+    },
+    "assertive-criticism/content.js": {
+      "sha256": "c0c1e26631bb48b86991bb7aa53212f45ed5eb68fbad4f8cee107714872c4e7c",
+      "bytes": 60872
+    },
+    "assertive-criticism/index.html": {
+      "sha256": "072c4de4ec4dd14ccb12a29ba578245832b46cd9dba28bfde2115bce0e695506",
+      "bytes": 1500
+    },
+    "assets/abc-component-model.js": {
+      "sha256": "7a958cd1f92c7e7edeaa2a80e0a9e83f62e5ee5a75b9cd3e21a5c6b5e4cd3d22",
+      "bytes": 2531
+    },
+    "assets/abc-component-practice.js": {
+      "sha256": "2da4f165c294394bcb1b42d7ed38cb03103d13565132adce68201f89c34fc665",
+      "bytes": 11906
+    },
+    "assets/abc-component.css": {
+      "sha256": "324863318ac290a4fefcc02a0a72be7b91f0ab481b142fd92a14e25dbca73aaa",
+      "bytes": 3238
+    },
+    "assets/answer-selection.css": {
+      "sha256": "01c41ab17e778756aadf62fa32de46d26c43f1d0e8d5857b0fd61406f9c84323",
+      "bytes": 1190
+    },
+    "assets/assertive-criticism-model.js": {
+      "sha256": "edfeb6e5dd979d088a7b36c8784ee00511564f4085b2eb5590be0f32d1346946",
+      "bytes": 2537
+    },
+    "assets/assertive-criticism-practice.js": {
+      "sha256": "944221c26b7db1fdac98f6b2a88104b10ed4daad54cb997ff7d19aaa3f60cf7b",
+      "bytes": 12272
+    },
+    "assets/assertive-criticism.css": {
+      "sha256": "c26a2324340d3f4bd7a868789208007a3d6934e305772a7c71d6580367f45019",
+      "bytes": 3370
+    },
+    "assets/balancing-being-doing-model.js": {
+      "sha256": "d8e1d194873019442dcd3cdc412c8e2dd6c0afafe9c57bb1346b4add3bd9effb",
+      "bytes": 2538
+    },
+    "assets/balancing-being-doing-practice.js": {
+      "sha256": "cbe3a9697927a1391799b3a2a2ef72a0d6c6d09a515bf4014bd5546ac2010982",
+      "bytes": 12278
+    },
+    "assets/balancing-being-doing.css": {
+      "sha256": "f949a0c40c92efe6b3504f79b9e6a78f3824696fc68996c817cc099d2dfd6bd0",
+      "bytes": 3414
+    },
+    "assets/behavioural-experiment-model.js": {
+      "sha256": "2d255b531f90b568ad358dcd363dce35d76285f5b5d19bfa61b943e1ab3a684f",
+      "bytes": 2514
+    },
+    "assets/behavioural-experiment-practice.js": {
+      "sha256": "5596a8dab1da24fb33d3cd12b67727750441d70783bf98309c735fc8e6aa9d9e",
+      "bytes": 12081
+    },
+    "assets/behavioural-experiment.css": {
+      "sha256": "5a2d64555e7adf4cbceecb604133d8e1a6e95924bc8a2a34e44aab7805281fa5",
+      "bytes": 3436
+    },
+    "assets/bounded-skill-model.js": {
+      "sha256": "2b55bfeef7845a59aa0e6d38cb4948af8128c38d3a9bc3d70fd0d6d45fb1f756",
+      "bytes": 1704
+    },
+    "assets/bounded-skill-practice.js": {
+      "sha256": "643d4afb712eb337d4522fb40a769e8f5ab866764734ded33ced12a459916ae8",
+      "bytes": 12993
+    },
+    "assets/bounded-skill.css": {
+      "sha256": "99d91faec4e0551a09bac4f7d60e9393cfb0ccdff5bebc8afe31a400ce7eaffe",
+      "bytes": 2493
+    },
+    "assets/chain-solution-analysis-model.js": {
+      "sha256": "06a6ede67df8d6e1d7904e39e75d18321e24fb6a05e797eba3a9197711de4e93",
+      "bytes": 2506
+    },
+    "assets/chain-solution-analysis-practice.js": {
+      "sha256": "2d8cb272090e227051cb9ed02525eebbbc7aa1c0b40f1cc561449f947a8dbdea",
+      "bytes": 12061
+    },
+    "assets/chain-solution-analysis.css": {
+      "sha256": "4379a7b401ce92290b277d4be61eab5b076498cd32211370a31012650acf5911",
+      "bytes": 3458
+    },
+    "assets/clinical-guided.css": {
+      "sha256": "afb0fe3515dee62f6de79087bb98650b7285a36102064d4f24cbb9275c31cc08",
+      "bytes": 4169
+    },
+    "assets/clinical-guided.js": {
+      "sha256": "7947c694c9dd12df85876bd266622dc2ea408b57f976cd62e82f1177cbf86c9c",
+      "bytes": 13896
+    },
+    "assets/compassionate-thought-diary-model.js": {
+      "sha256": "6d19db315e346793148f3ed03fd68cc7c15e5746bb7f16b728cb021eb17418a6",
+      "bytes": 2534
+    },
+    "assets/compassionate-thought-diary-practice.js": {
+      "sha256": "74b469dda70e8c3e34bfb1a68b1cb5fd4415406eafca2fd755cc5b02546dc762",
+      "bytes": 12162
+    },
+    "assets/compassionate-thought-diary.css": {
+      "sha256": "c3626bc6b8bee152e55dd06ba0f731e7aac8da59501bc0825a21ade1a469d935",
+      "bytes": 3546
+    },
+    "assets/continued-skill-model.js": {
+      "sha256": "22caa685724a2efa0a83f7c31a53fb76ab34ad85993510e7bbce537361ad5f6e",
+      "bytes": 1769
+    },
+    "assets/continued-skill-practice.js": {
+      "sha256": "d329f81be248a6da2e2b7ca37acbe6bec0eccb3bfa699b0b6966976113169582",
+      "bytes": 13768
+    },
+    "assets/continued-skill.css": {
+      "sha256": "2b1b41e387e5af68cc457ed3a8b97410634a2f4039bee0d682df26774f2aa17c",
+      "bytes": 3007
+    },
+    "assets/coping-cards-model.js": {
+      "sha256": "86ef5b6a7e06abad5317dfda2296cc9e996a15fab6caf0dfe0cb56f73ae74362",
+      "bytes": 2530
+    },
+    "assets/coping-cards-practice.js": {
+      "sha256": "bc3b48fd5c34fa6812bb38b0e8b400b2c4b70facb5247519a0dd280884ea642e",
+      "bytes": 12238
+    },
+    "assets/coping-cards.css": {
+      "sha256": "bd6ba30f3172b51d490307cdb75bb2d688b7d568a94d61ad5d0680fefb9333ad",
+      "bytes": 3216
+    },
+    "assets/core-beliefs-model.js": {
+      "sha256": "296bc64c267e43e1738becc9d34d7edd6437c58a29c9582fb748eb2e626e7922",
+      "bytes": 2504
+    },
+    "assets/core-beliefs-practice.js": {
+      "sha256": "ec8a2c8defca135cba4557caf771fc1f2bd4e87deb14a2eb6b4c4e31772e5930",
+      "bytes": 12045
+    },
+    "assets/core-beliefs.css": {
+      "sha256": "fb21f95c69f1bb056b132b91610f7c5b7a3e97793dee1ec63d468f3b3fd9b88b",
+      "bytes": 3216
+    },
+    "assets/dbt-choice-model.js": {
+      "sha256": "1fa8a1c3fb1bad8dfa180f568a1dd92f5224c43b54aa9969b9eaf5e222e828e9",
+      "bytes": 2389
+    },
+    "assets/dbt-choice-practice.js": {
+      "sha256": "82607c812559d4ef672ca0fde8a4624c188467a6c18d72fa7d1f93cb6a623cbd",
+      "bytes": 21134
+    },
+    "assets/dbt-choice.css": {
+      "sha256": "6b8a21983e7f8f57d814887459eb2113e722d3c8d9685d66b2640cc995d79aed",
+      "bytes": 6253
+    },
+    "assets/dbt-mindfulness-what-how-model.js": {
+      "sha256": "0bc96c9e74ea58f0243a19cc4732081afdd1d83c8c26a41ddc90c74ac3e3a9a0",
+      "bytes": 2547
+    },
+    "assets/dbt-mindfulness-what-how-practice.js": {
+      "sha256": "8089da9432e898e0c8615a7064b686e3ce1e5f017602b6d34171665ff0f2a676",
+      "bytes": 12361
+    },
+    "assets/dbt-mindfulness-what-how.css": {
+      "sha256": "c6eb78da3ac29a1900f606072158522f1be97a285eaba23401801f6db8cbd5c7",
+      "bytes": 3480
+    },
+    "assets/emotion-regulation-troubleshooting-model.js": {
+      "sha256": "14643a008890979a429757a410ef2881a6c0d5f900371b86f49f5ee01074154d",
+      "bytes": 2551
+    },
+    "assets/emotion-regulation-troubleshooting-practice.js": {
+      "sha256": "8df8169bfd7c4b916e07cd9909618110a500bcda8ca97340b6cb2b920deeb85e",
+      "bytes": 12330
+    },
+    "assets/emotion-regulation-troubleshooting.css": {
+      "sha256": "1dae79ee2a1046c754653dd836102ab206950aa3b3823300b0217f77f827afd5",
+      "bytes": 3700
+    },
+    "assets/emotion-skill-model.js": {
+      "sha256": "3a852391c315a4896345d5c8585e4b2832f309b6cbc90d92adfa82ad19fa5cd2",
+      "bytes": 2843
+    },
+    "assets/emotion-skill-practice.js": {
+      "sha256": "b6bd8122c34f49136771bb9736ebdfe256d678a564598aa93f0361b7ab2adc43",
+      "bytes": 17925
+    },
+    "assets/emotion-skill.css": {
+      "sha256": "a46638d83661f166cbe922ab66eead5c3dc487cda4c9f9f34b72ed3f9aec9085",
+      "bytes": 3512
+    },
+    "assets/ending-relationships-model.js": {
+      "sha256": "688600f83df5ab1db92a210a16c9416c54daed14bfb7551f5f87b816d9f091bd",
+      "bytes": 2538
+    },
+    "assets/ending-relationships-practice.js": {
+      "sha256": "11856cd7c836c5da88eee361bf5e99c962b9a083b2dffe389396f312f43ea8b3",
+      "bytes": 12276
+    },
+    "assets/ending-relationships.css": {
+      "sha256": "000678486f40ee3685af19ee5febeaaafdd994a6c30c9781c1b64d2cf50e7e1e",
+      "bytes": 3392
+    },
+    "assets/evening-practice-aid.js": {
+      "sha256": "0299e6ac49725d7144be8a9d4f3f825559f5b9556930aefa9c733f20ba546506",
+      "bytes": 3003
+    },
+    "assets/evening-skill-model.js": {
+      "sha256": "36b6d9406200c1157777e05ce17719ee8ed988a0bec39e2f01d3d5d826aeb5f8",
+      "bytes": 1767
+    },
+    "assets/evening-skill-practice.js": {
+      "sha256": "ec68a2215636eadb6bf3bef7fdf53adb8e66f466eff33c1bec9b4f326aab6aba",
+      "bytes": 19277
+    },
+    "assets/evening-skill.css": {
+      "sha256": "4a951f0146484b5945c757e7ef05e83db9ec4a6ce2daaf77c22d7af5287440ac",
+      "bytes": 4357
+    },
+    "assets/goal-identity.js": {
+      "sha256": "384e8b9aa32a07597d819d1cc31eb4baae2cad2ebd8d94f880030cd6185cd8f9",
+      "bytes": 1200
+    },
+    "assets/guided-focus-components.js": {
+      "sha256": "75db7ad2831868d85077b174761593ad9b77ac4344f0b089f98a22f3d13b7d03",
+      "bytes": 5389
+    },
+    "assets/guided-focus-shell.css": {
+      "sha256": "87d25d54f97a039689545ee1788a28a1c8c8025e4a380ca732fc04aa3568c530",
+      "bytes": 6432
+    },
+    "assets/interpersonal-model.js": {
+      "sha256": "b6221933c08970ff16e00d5c3e257cb61bfc2cbdb10c0e2ba46ad2fdcd208a6f",
+      "bytes": 3120
+    },
+    "assets/interpersonal-pilot-model.js": {
+      "sha256": "1ad540f27267d43f5dbdefd37ddd15e43f3af744058c03c56ae5c5b48b73b930",
+      "bytes": 1388
+    },
+    "assets/interpersonal-pilots.css": {
+      "sha256": "729e2c0fa03dc447d0d1e1ffcb996b91baa9eb9ea67f98fa74d85ce11cdf4ec3",
+      "bytes": 1501
+    },
+    "assets/interpersonal-pilots.js": {
+      "sha256": "f0217b2ea1fc712206623c269c31c1145c282e6a91793aa533ffb2a994bc5cff",
+      "bytes": 6030
+    },
+    "assets/interpersonal-practice.js": {
+      "sha256": "856ba1d66f317cc1197cad44ba17a21f88ee3867c332c7ccb4faec28db1253d7",
+      "bytes": 13947
+    },
+    "assets/interpersonal-priorities-model.js": {
+      "sha256": "e9a45edb08ea637ca1c41e5f16121513eb3d8159575ab11399c421964e39c762",
+      "bytes": 2542
+    },
+    "assets/interpersonal-priorities-practice.js": {
+      "sha256": "018c4d18666f72e9473a17d730b54a608d42aab6f2f111960ed38a2d35c97f56",
+      "bytes": 12662
+    },
+    "assets/interpersonal-priorities-shared.js": {
+      "sha256": "cc69e1997ff276d597489792290e09ec4942ae5d9bf4f86791b655c313108d1f",
+      "bytes": 2997
+    },
+    "assets/interpersonal-priorities.css": {
+      "sha256": "f76765eb94e0884e46b5955fb53ef344db2819bb46b9e65ac6833e6fe39b40ef",
+      "bytes": 3480
+    },
+    "assets/interpersonal-troubleshooting-model.js": {
+      "sha256": "648f338ee86f5f0623d4d1272fba84356d049e4491c1d33e70c3fd39c503cc55",
+      "bytes": 2547
+    },
+    "assets/interpersonal-troubleshooting-practice.js": {
+      "sha256": "8d93ccb111ed097216154d34188d7fcbde27a0522a10acb3960f6be07cc02549",
+      "bytes": 12687
+    },
+    "assets/interpersonal-troubleshooting-shared.js": {
+      "sha256": "b27c43487c370166a563e226aa2ccc1b729b344bee3cbd2979fbecea09269532",
+      "bytes": 3034
+    },
+    "assets/interpersonal-troubleshooting.css": {
+      "sha256": "f40d275e0272f4cd57d361211db9db7af60802b211a6dd778920c581ef97961f",
+      "bytes": 3590
+    },
+    "assets/interpersonal.css": {
+      "sha256": "3fe04bca7699c1db66afc55dd7c453831bccc92548cf9b8bc4bbc16911f59be3",
+      "bytes": 2686
+    },
+    "assets/loving-kindness-model.js": {
+      "sha256": "c7c2b322a99d3cc37a1f17f5d06349856e4ffd01512ed580b607ba88cfc882b5",
+      "bytes": 2533
+    },
+    "assets/loving-kindness-practice.js": {
+      "sha256": "ae2ed30e36c255fc2aee8fe82b5a8c33515c1685a7c270e533337b28ae6628f8",
+      "bytes": 12256
+    },
+    "assets/loving-kindness.css": {
+      "sha256": "32ecf4a5b6d7d4393a68cc40ac8c3b218f605d7a56e8e6f7ffd90e1e6da66efd",
+      "bytes": 3282
+    },
+    "assets/maintenance-planning-model.js": {
+      "sha256": "02c23f1f135e5a1a4a17780b880b3be65971fc6d5f7306ab9c25697cde1f21e8",
+      "bytes": 2512
+    },
+    "assets/maintenance-planning-practice.js": {
+      "sha256": "af95fa50150305d49ea81879d79e1867a61a2e4ee9075ea23cf67e1f76aa82ed",
+      "bytes": 12763
+    },
+    "assets/maintenance-planning.css": {
+      "sha256": "d5f7b956f70e70a4f84ed9b9a04b1cff0bd46b1ea48bc9d585dba5762c77ca8d",
+      "bytes": 3392
+    },
+    "assets/middle-path-wise-mind-model.js": {
+      "sha256": "c5bf4f747b7860daa0f5ba8a8a0cabf10424d2d14cc510e3e74ffb6ce76e8542",
+      "bytes": 2537
+    },
+    "assets/middle-path-wise-mind-practice.js": {
+      "sha256": "ba01802935717e063d6f9d69b8a5173851c3f9c0dac1cbb14b6304e533aaad5e",
+      "bytes": 12276
+    },
+    "assets/middle-path-wise-mind.css": {
+      "sha256": "5ee1578ae06b1df8c4c32e59b3033c60937d7ba70e51787f030f4adb4af294b5",
+      "bytes": 3414
+    },
+    "assets/mindfulness-events-model.js": {
+      "sha256": "31d7fe87cb1e4f0c7a90333bd887408840216bb5cdfe49feabce653d99d6aff7",
+      "bytes": 2536
+    },
+    "assets/mindfulness-events-practice.js": {
+      "sha256": "b06d12681ae25dffbea4bcb8f509c27f112d564708f1c8cbdb035917c2cf4689",
+      "bytes": 12268
+    },
+    "assets/mindfulness-events.css": {
+      "sha256": "415db94c110a13c933b1a8fc34cc02a476f57086d614f4883b3f71fc777e4129",
+      "bytes": 3348
+    },
+    "assets/mindfulness-of-others-model.js": {
+      "sha256": "66e2a6fd18133dcedb2fb49b4235a966d29a75ffe9a0841f0f1759740288c774",
+      "bytes": 2538
+    },
+    "assets/mindfulness-of-others-practice.js": {
+      "sha256": "68f7bab4451c7790dc53c3271e7514873da8350184e79bbb5fdcf9f45319785a",
+      "bytes": 12278
+    },
+    "assets/mindfulness-of-others.css": {
+      "sha256": "8c14e5715ee38854214e655aa276be949dd403c88846e36283bdf0aad1bd5836",
+      "bytes": 3414
+    },
+    "assets/missing-links-analysis-model.js": {
+      "sha256": "f6441b222b1069960756d8bfa539bef6cbc115eb82f593583021f1e65c4e00ce",
+      "bytes": 2505
+    },
+    "assets/missing-links-analysis-practice.js": {
+      "sha256": "647239a4dc4037331b21456cf5ac3f1cf1e04497d0f4ce5f081c4da64c77dc6f",
+      "bytes": 12491
+    },
+    "assets/missing-links-analysis.css": {
+      "sha256": "b3fbbf00721cb162b5a91630d3413a1894d8872b6b40a2c1035b90d4d84b29bf",
+      "bytes": 3436
+    },
+    "assets/night-skill-model.js": {
+      "sha256": "54dc28b51dc0d451c9e846a392318897bf8d21171dd0c157b262cd600259bd1c",
+      "bytes": 1942
+    },
+    "assets/night-skill-practice.js": {
+      "sha256": "82acc2611789f5f97fd75d0d77fb6940167ca578c18001c235bd4f3b25cbaf77",
+      "bytes": 12567
+    },
+    "assets/night-skill.css": {
+      "sha256": "2a292a0e0631f667259267f073e4effef7d80f49db556b7ebb3907ffadd644ff",
+      "bytes": 3648
+    },
+    "assets/perspective-skill-math.js": {
+      "sha256": "c0c9561deb145ee80c4271c6bd9a383cfd0e56ea9b0303bab5910828bcb234dd",
+      "bytes": 2228
+    },
+    "assets/perspective-skill-model.js": {
+      "sha256": "38f6943bdd4d18f48192880f7696ff01cc69d6d9e66c1e64ad4e63cb1862f5e9",
+      "bytes": 2349
+    },
+    "assets/perspective-skill-practice.js": {
+      "sha256": "ef3d0d68b517d4a701fa59a03720d28337717fb63bc688aa086c6619ac418257",
+      "bytes": 29563
+    },
+    "assets/perspective-skill.css": {
+      "sha256": "e3569d43246b180485186cb2bed96cc2139feff582e251fdf779eabbdcfcc748",
+      "bytes": 6434
+    },
+    "assets/practice-clear-landing.js": {
+      "sha256": "ff67dc9ec14edbe3f4d0b83332b19927eafcd8786d540a0173a30451916609dc",
+      "bytes": 1935
+    },
+    "assets/public-review-paths.js": {
+      "sha256": "e835ef5870ab755bd9ff70ff70b5015bc18a491d981391f78386d7cc889a96ca",
+      "bytes": 980
+    },
+    "assets/reality-acceptance-model.js": {
+      "sha256": "266ed77f089f8f5e51e211421d2bcde775737910d8ffc1ed30adee30c57aef75",
+      "bytes": 2510
+    },
+    "assets/reality-acceptance-practice.js": {
+      "sha256": "a713b2134e86a3aab83432056bac77384f65b904cbfd9dcabed7623710f4e8f8",
+      "bytes": 12069
+    },
+    "assets/reality-acceptance.css": {
+      "sha256": "95c152254da97c09e0ce0a66e48edabdf7cf067e3aa7aceac730c89bdd57c107",
+      "bytes": 3348
+    },
+    "assets/relationship-building-model.js": {
+      "sha256": "5e873524ee461f98db24e0e31c51976e703155d4c91cc78b3313f3cc0309ab02",
+      "bytes": 2539
+    },
+    "assets/relationship-building-practice.js": {
+      "sha256": "3e8d6ab831310bcb0e11c4914ef1486d325e77c2f364d564c6a0c7ce4e7f9207",
+      "bytes": 12280
+    },
+    "assets/relationship-building.css": {
+      "sha256": "ca1bfa6e886abc8b782431cdd8990e8b023cc270310597f251a7d57ef0a77d13",
+      "bytes": 3414
+    },
+    "assets/rules-assumptions-model.js": {
+      "sha256": "91f13b2603be0896425470c3cede75ec4b331051d4b033a503a3bf0a7cf4993a",
+      "bytes": 2509
+    },
+    "assets/rules-assumptions-practice.js": {
+      "sha256": "897994375d4e8c4e10a790b8a08ae6e09c387845d2898f7e869b546b2d0178f3",
+      "bytes": 12061
+    },
+    "assets/rules-assumptions.css": {
+      "sha256": "3dabd9d47f7f87a8717236ebb4c88e6f3cb55c4a999284598e1694ae530b62c8",
+      "bytes": 3326
+    },
+    "assets/self-compassionate-behaviour-model.js": {
+      "sha256": "846480eacb745a5eeed3b9dfece4058bc873a40aeba32ca0d5348e6ccee41534",
+      "bytes": 2538
+    },
+    "assets/self-compassionate-behaviour-practice.js": {
+      "sha256": "8ab5f8f18a24004d2f6beda63c78540a4ac9751b5ec5a11a4f9c79e6d4761ea1",
+      "bytes": 12175
+    },
+    "assets/self-compassionate-behaviour.css": {
+      "sha256": "bb681338fb53248f8dd9b51b1a95030a44461df15419118602451f0b300ba174",
+      "bytes": 3568
+    },
+    "assets/shared-support-chrome.js": {
+      "sha256": "adb841f4f6faaec8f077c05250dcaee103f9d4a7885b262e22b77bb5e9ecac00",
+      "bytes": 1938
+    },
+    "assets/support-contact-spacing.css": {
+      "sha256": "802ce274e912f6ac15e3b79573b54ed3473093898b0d9a7becf9a0d0729b66c6",
+      "bytes": 164
+    },
+    "assets/validation-others-model.js": {
+      "sha256": "dcc2c13fbe771acbd8b83f451ab2e500aabd78d6a1d345e05a756539d46a5356",
+      "bytes": 2767
+    },
+    "assets/validation-others-practice.js": {
+      "sha256": "2af7d77a79d3630bbe2b556c497e964cac10d4553aa71aad4295a584e5a23c89",
+      "bytes": 13562
+    },
+    "assets/validation-others.css": {
+      "sha256": "061ba271eef67e2ff86b4b40557ac3f9a4608f3fbb672d6d40a44e1774688a4d",
+      "bytes": 3340
+    },
+    "assets/wise-mind-guided-model.js": {
+      "sha256": "055597bb2f79fb89438885e07bff5c537c0306005bb6cd854f7fa6c756f84632",
+      "bytes": 2875
+    },
+    "assets/wise-mind-guided-practice.js": {
+      "sha256": "ab6f62e34468758dd7a9c6fc1106d8f5a4de5190ef6ee1f39724ddddf0ab3fd4",
+      "bytes": 18109
+    },
+    "assets/wise-mind-guided.css": {
+      "sha256": "69c33f3305df90a9c081c99361cdca398b6c14f54b9db31d38376e840682193d",
+      "bytes": 2567
+    },
+    "balancing-being-doing/content.js": {
+      "sha256": "f997abe9909971631b8700d50b2bed51384ac85f5c5004870a99fe0ddb91b760",
+      "bytes": 49257
+    },
+    "balancing-being-doing/index.html": {
+      "sha256": "96b6a1adb73a2d7436d906af812bf4be5ad18b4f952a93f3a1a11d9385fe7c77",
+      "bytes": 1512
+    },
+    "batch-1/controller.js": {
+      "sha256": "787417b66216020bc9318cd2b7e448f222666d324cf590fed2fe887992bac0f7",
+      "bytes": 20176
+    },
+    "batch-1/delivery-framework-batch-data.js": {
+      "sha256": "5b25caa7e3e2999cef1c5b078da21c75aee65f6ff3a2645d044ac2b503f1eba5",
+      "bytes": 24350
+    },
+    "batch-1/design-copy.js": {
+      "sha256": "b7cdc7b489ce1eb62ceb676e2a089a11ecfdbaef96b693d98e2b859999fe05ac",
+      "bytes": 4561
+    },
+    "batch-1/index.html": {
+      "sha256": "915a7d633f19e080fb8bd5f9b4e0e4d6e94e85bc8493675ba88409c0439023e7",
+      "bytes": 2687
+    },
+    "batch-1/layouts.css": {
+      "sha256": "097589be3920894f46c108976c2a2a20df70f0f2b33a83301e87cf16d493a56f",
+      "bytes": 13969
+    },
+    "batch-1/layouts.js": {
+      "sha256": "a9aa10705a250a9ac6d8eee11eca6038ffbfdae22d64100137d962019bc734fe",
+      "bytes": 7333
+    },
+    "batch-1/looping-refinement-data.js": {
+      "sha256": "0cd51a5f37dbfa92d82bebf1ebc837dd081b9f48526484794f716033936125e0",
+      "bytes": 16417
+    },
+    "batch-1/looping-refinement-ui.js": {
+      "sha256": "de4104c66df92172fe9774296101fe870feb1580ab43f13df0f0c7487f7cb7e7",
+      "bytes": 1994
+    },
+    "batch-1/preview-adapter.js": {
+      "sha256": "683a81cb80ed701abbbe37420cf7afecef918d53dc182da3e668159db8e24064",
+      "bytes": 4599
+    },
+    "behavioural-activation/content.js": {
+      "sha256": "1e1ca8dde008a0bad36b956d3f5e168f61ebee709a25c6eb6c65c99a44738f48",
+      "bytes": 27129
+    },
+    "behavioural-activation/index.html": {
+      "sha256": "f07e446cfb2e2db55d67bcc5c0228354fecdbe461d0cf4321e8753ff1bc4d4dd",
+      "bytes": 1571
+    },
+    "behavioural-activation/model.js": {
+      "sha256": "894306d81941ebbfacf386fe91a2fee9ac85b8185e2ee2c773f521fd3e93d7c6",
+      "bytes": 1391
+    },
+    "behavioural-activation/practice.css": {
+      "sha256": "f60c91e26e920a61ab8db10e3e8be040fcaf71540bcc8aa22b0eea31e984d7df",
+      "bytes": 2198
+    },
+    "behavioural-activation/practice.js": {
+      "sha256": "0067a67a382696770bddce3f763c79f8a308000dc60f45df9a48b5889d8e0634",
+      "bytes": 10721
+    },
+    "behavioural-experiments/content.js": {
+      "sha256": "01b5644160b3bd18b873ea984e3bade4f99d7eae4118ad6c9ed07a351deb8cc8",
+      "bytes": 38019
+    },
+    "behavioural-experiments/index.html": {
+      "sha256": "359f74bef8e7f134b3d7b8dce80b3727f28916a20bf477cd429a24cecc3dce8f",
+      "bytes": 1490
+    },
+    "broadening-self-evaluation/content.js": {
+      "sha256": "1d57e81544983fb7ac6e72d0d8f33d49deabcea7dd912c8a0b3b30f250bba435",
+      "bytes": 24341
+    },
+    "broadening-self-evaluation/index.html": {
+      "sha256": "adaa6d6f5f5b91187d36675c08147c921d9b3499d308146f0df086e8bf865a06",
+      "bytes": 1579
+    },
+    "build-mastery/content.js": {
+      "sha256": "10b8595b93855cd0e7fb1ed5b8bf9b5574852049bca462df114d6dc644f7b04e",
+      "bytes": 33714
+    },
+    "build-mastery/index.html": {
+      "sha256": "6a006daf4a0496a690a2045b158aec35a5a388a0a2ebbfc9e2638569e6cb0dbe",
+      "bytes": 1187
+    },
+    "chain-solution-analysis/content.js": {
+      "sha256": "ce92ab4ff551d5e506f1982939b0f4547e5f47d51fb5622e1be97b90ba949127",
+      "bytes": 55359
+    },
+    "chain-solution-analysis/index.html": {
+      "sha256": "1c543771059eea50378a28b7ec9dbcbcbbe00697bff62a7b1392e33a560d8420",
+      "bytes": 1520
+    },
+    "check-the-facts/content.js": {
+      "sha256": "40bfbcd70b76d628e8db06dbe37a999f6abe897640fb740d8127c7133278ef54",
+      "bytes": 21721
+    },
+    "check-the-facts/index.html": {
+      "sha256": "18d1a6c05c405f108c669a4411a9d3fb432c5f0168cb0c2eb5a93e3aa5eee44f",
+      "bytes": 1484
+    },
+    "cognitive-continuum/content.js": {
+      "sha256": "a8ed81a89bc3af9c7fa6df0009a7296a4dd0ad8695b208dede7f94af2d356728",
+      "bytes": 22338
+    },
+    "cognitive-continuum/index.html": {
+      "sha256": "9620fcb1d3b2740fc0b053b280c999c7ad9a7e3885b395a4bf8de4a858500bfa",
+      "bytes": 1519
+    },
+    "compassionate-letter/content.js": {
+      "sha256": "3b94e5b86c44eb464916f9af6f0395ab565968e40a27425ac1177107a264f4cc",
+      "bytes": 21317
+    },
+    "compassionate-letter/index.html": {
+      "sha256": "86573d6db39ac0105b9e567c2df1528801e886b5152db694dd793320ce353758",
+      "bytes": 1444
+    },
+    "compassionate-thought-diary/content.js": {
+      "sha256": "e88711ce872216fa5fb27fd8c8e084c7d6a1ed877048eb5e4c01dbfcb03da196",
+      "bytes": 47316
+    },
+    "compassionate-thought-diary/index.html": {
+      "sha256": "b938e194f8616c4600d25fa375dc16b873177845a07f4c06b3393c2a604337d5",
+      "bytes": 1518
+    },
+    "cope-ahead/content.js": {
+      "sha256": "b1021a99a8bdb059d69fbee0eb2d6d742e1155bb6b967a161f8c8ccd45dfc6fb",
+      "bytes": 36681
+    },
+    "cope-ahead/index.html": {
+      "sha256": "2caf1d9a0946c5dfd7e3f93afd128b68c85b9a6c18f0c6676be96a1f144cbebe",
+      "bytes": 1184
+    },
+    "coping-cards/content.js": {
+      "sha256": "75f12463769e206f43b7b2520cb79125a6de9b79d25426454eadf41a020da04a",
+      "bytes": 45662
+    },
+    "coping-cards/index.html": {
+      "sha256": "1c00ad3937aaf4c24fd9c8083f59215e02100522aa6e85d6ea2ac517dd2a5c6f",
+      "bytes": 1428
+    },
+    "core-beliefs/content.js": {
+      "sha256": "562fc59ad2156d42572a5e7f5aab9c7a1208cbf2c0718250b55d1202a2e9b171",
+      "bytes": 51638
+    },
+    "core-beliefs/index.html": {
+      "sha256": "42d982ff5ba013e7fee6e58072e1f632a2567cbd3830537e3edf98283b730935",
+      "bytes": 1468
+    },
+    "data.js": {
+      "sha256": "6afb3e60b0e514eb624b69ee8a3bd04df61dd528a40a5bd8deb18b050837f65e",
+      "bytes": 53059
+    },
+    "dbt-mindfulness-what-how/content.js": {
+      "sha256": "3e98130e24dc2dcb595670a83eaeb1a6df27a1f734e99bb1e8b2cea287c5b189",
+      "bytes": 52214
+    },
+    "dbt-mindfulness-what-how/index.html": {
+      "sha256": "47f17482180610832ee53c67b8730c571bb6878d63b94b48ab147d91ad3beeca",
+      "bytes": 1522
+    },
+    "dbt-pros-and-cons/content.js": {
+      "sha256": "b326de29fb6ae05ccd4b09625609a60e1b3404a90b8d4fbca2ddfb81bca9acef",
+      "bytes": 21343
+    },
+    "dbt-pros-and-cons/index.html": {
+      "sha256": "b64a7af5b7c353fba490da19a1fb0180fa8ed378b1a37e774fb2ccb7ee30d325",
+      "bytes": 1427
+    },
+    "dialectical-thinking/content.js": {
+      "sha256": "e417ba9f1f18dd758748f6e886b88f667a182a4a380104c75a035da03499ee8d",
+      "bytes": 19585
+    },
+    "dialectical-thinking/index.html": {
+      "sha256": "fea1cd8b03edecc9af6375eb80f5318738721db1cdb7c10b2f570168887c1a05",
+      "bytes": 1450
+    },
+    "emotion-regulation-troubleshooting/content.js": {
+      "sha256": "f18adcfaf6cf59b206bc01d2fb6018edbbf91b49be33251550d6ddad7bf37069",
+      "bytes": 53707
+    },
+    "emotion-regulation-troubleshooting/index.html": {
+      "sha256": "96f4597124aef662a00e541af13df1197e2a4bf47b48a3d2b18a2cce9b664ab5",
+      "bytes": 1560
+    },
+    "ending-relationships/content.js": {
+      "sha256": "39aa4827f25da4dfacb911ca0bf4768ed7fa1d12e96ec77737b5e85ac1bc893d",
+      "bytes": 58648
+    },
+    "ending-relationships/index.html": {
+      "sha256": "4652fd4ca607bf1b70c33f89370cb5f79525389fc65b62cce372055d72b52b78",
+      "bytes": 1476
+    },
+    "graded-task-assignment/content.js": {
+      "sha256": "7e53e4d54fdfa313efaa90bdc856bcf8fac16bb62a0c58aab1887766ec30f44f",
+      "bytes": 20224
+    },
+    "graded-task-assignment/index.html": {
+      "sha256": "a21c46c2f66c52ac601fbec8208262efcb354d0008adbbf553972cfa4a4f13e8",
+      "bytes": 1454
+    },
+    "improve-the-moment/content.js": {
+      "sha256": "c84cce8c5ded7c5c861b242676478d2871cb23f312f56420f291709f6265560f",
+      "bytes": 37184
+    },
+    "improve-the-moment/index.html": {
+      "sha256": "7e381d61104748385b8aa8e6029a7401e6e48b91b1a4c707df99135285e6995d",
+      "bytes": 1437
+    },
+    "index.html": {
+      "sha256": "a480c2a0492fe9452ac11468195e8ef69653879c73612adb49aba2ea1f898fbd",
+      "bytes": 3109
+    },
+    "interpersonal-dearman/content.js": {
+      "sha256": "727b459df4bebaf05b94bf4fcfa098bf2d5267850df0def8accaaa8ab859676d",
+      "bytes": 47412
+    },
+    "interpersonal-dearman/index.html": {
+      "sha256": "5566ef1f81703d402563dedb8960621877af52a789fe55db8a2b8caa19699ddf",
+      "bytes": 2275
+    },
+    "interpersonal-dearman/legacy-preview.js": {
+      "sha256": "1837c0ef51d39b99632f8b61d98b9a0792f3a6f64929a01bc3fe35cac6f02e21",
+      "bytes": 145
+    },
+    "interpersonal-dearman/pilot-content.js": {
+      "sha256": "5d6f247e8ae61da44a8343a0aeec07015d4e2ab34d5a446bf6e00784f02ad53e",
+      "bytes": 15561
+    },
+    "interpersonal-fast/content.js": {
+      "sha256": "ed88022822b4fce55156f91d45b883129424fc50e5a148cca910a63e3afdf2de",
+      "bytes": 42618
+    },
+    "interpersonal-fast/index.html": {
+      "sha256": "4132f155e310d034fd92c7d9e0986a19648894443400f1d737ecf4bf7100857a",
+      "bytes": 2267
+    },
+    "interpersonal-fast/legacy-preview.js": {
+      "sha256": "09afea5aec6dbfae0cffb6e8deb1a782ed5ae2d0cbde427323d77429f8f4b328",
+      "bytes": 229
+    },
+    "interpersonal-fast/pilot-content.js": {
+      "sha256": "0a01bb14bc5f39504f08f4ead12f900d1daac201457497f0acc00c5b24545be8",
+      "bytes": 30094
+    },
+    "interpersonal-give/content.js": {
+      "sha256": "ec67d059229f6706b5e1f06c36d80d810b7ea5df663ba3447ebbbe80912de39d",
+      "bytes": 41744
+    },
+    "interpersonal-give/index.html": {
+      "sha256": "f741c918964cc48b5d9b05ec0a1a6dd5903f623a3c3290a978318e2a5ab45498",
+      "bytes": 2267
+    },
+    "interpersonal-give/legacy-preview.js": {
+      "sha256": "9e31ff61306934c3033c4cd86b55959950547190eee747bee9593d7b440ef5c4",
+      "bytes": 275
+    },
+    "interpersonal-give/pilot-content.js": {
+      "sha256": "cb5f6e269077a3c5766dce3951c8ad18e21455571c6ae1573803cec3272820de",
+      "bytes": 20861
+    },
+    "interpersonal-priorities/content.js": {
+      "sha256": "4ea6e7b81670b0b957ffa0017e2e1e6e6828b6d6998c813db92b7ce5c267869f",
+      "bytes": 47413
+    },
+    "interpersonal-troubleshooting/content.js": {
+      "sha256": "d449251b3da72a3e8d8a9229f62a29e31ef5beb271f9a9da7b89537c4d0e79a8",
+      "bytes": 54895
+    },
+    "loving-kindness/content.js": {
+      "sha256": "7005df152a77aa2ec42f1fa58894e44ae8024bc8c640c20c7570f53010303b9a",
+      "bytes": 49912
+    },
+    "loving-kindness/index.html": {
+      "sha256": "fe295a0368a798eeab96cf48fe89fb5f70b2f9f842ebc6948d5e1a76b299b347",
+      "bytes": 1446
+    },
+    "maintenance-planning/content.js": {
+      "sha256": "24d374128d4bda085092ee1c606c2205ce28515d2e2507e80a19dcc367294d7d",
+      "bytes": 45744
+    },
+    "maintenance-planning/index.html": {
+      "sha256": "b9d394692ca54960ecd6785efc6f10f67aa6d2c8baff98c98b22eddb8d14f453",
+      "bytes": 1476
+    },
+    "middle-path-wise-mind/content.js": {
+      "sha256": "b586fa5f9e7c7a52ac43c6c8f917301facf48d8e754aadc77c3734ba3dcd7f8f",
+      "bytes": 50150
+    },
+    "middle-path-wise-mind/index.html": {
+      "sha256": "3818993e38801f8571ac502a88b405e64154640865880aa5253d40cc48eb22bd",
+      "bytes": 1512
+    },
+    "mindfulness-events/content.js": {
+      "sha256": "f29c332c0ce3634358758ce62752e845dc2daa165b24af7cf2c1313cdc51b203",
+      "bytes": 47660
+    },
+    "mindfulness-events/index.html": {
+      "sha256": "39ff3418fb1d8e9108af2890e8322ff4b571f7bfd27ebce69e2d8e9daf34fc4d",
+      "bytes": 1518
+    },
+    "mindfulness-of-others/content.js": {
+      "sha256": "2ae11bc2d7a73c2ba242530a40dce806729c212eee4cb143adef9b62ea214d41",
+      "bytes": 52755
+    },
+    "mindfulness-of-others/index.html": {
+      "sha256": "479769f0e65d7d864450f07a9289def2fc1206a77a0c28fb4913fe5e3a368a90",
+      "bytes": 1482
+    },
+    "missing-links-analysis/content.js": {
+      "sha256": "3c698a0929c77ca0e77bc2cb1c1a762f56941b38de43ad15251dbff5142c6ae7",
+      "bytes": 45038
+    },
+    "missing-links-analysis/index.html": {
+      "sha256": "73212fc60d6713c185d40828f0fca9c08dd7a48e8a6e9a6b66b2af008bf81da0",
+      "bytes": 1488
+    },
+    "opposite-action/content.js": {
+      "sha256": "61d58571ea7cf1777a36f8cc367e8b363c73a96cf50956b49e3f7fcfb6b95c02",
+      "bytes": 28285
+    },
+    "opposite-action/index.html": {
+      "sha256": "52a7fa648b2f519c05c114a63df96d2ea4ad86e8d513607b7f563f69971d1ac1",
+      "bytes": 1440
+    },
+    "paced-breathing/content.js": {
+      "sha256": "abe35dc90f547358e924ec5295e755167021ab407857991b7bbd3c51618a3af7",
+      "bytes": 21672
+    },
+    "paced-breathing/index.html": {
+      "sha256": "6129c4b714cb41b9fca0d06d13697532e89bd35d7dc2dd9b8f40d5fedfb7f0d6",
+      "bytes": 1497
+    },
+    "positive-qualities-record/content.js": {
+      "sha256": "cc611f6778b1f3c739d5dce6449ded5fbc5a19d1c3a1f5bbe0703a969f8249fc",
+      "bytes": 20144
+    },
+    "positive-qualities-record/index.html": {
+      "sha256": "72dbfa68cb80c2bdc27c163967fbf647d905d8ea4a3a5e36fde119f5bf32c506",
+      "bytes": 1500
+    },
+    "practice-preview/practice-workspaces-review-data.js": {
+      "sha256": "cbffa0c9782e8807ccc82fcd56f165a447c8380440c4d9f8d833bcc2f6058b8f",
+      "bytes": 24614
+    },
+    "practice-preview/preview-safety-data.js": {
+      "sha256": "d7ed4de07536032f521061f6f3920b25f719d9cf24cf5fc19265b9fc5e4a0771",
+      "bytes": 4803
+    },
+    "present-moment-awareness/content.js": {
+      "sha256": "8a8abaa23019d0ca9059f5a255f0274dacd8bacc8b066db1d521f4c17ad6f1b0",
+      "bytes": 20346
+    },
+    "present-moment-awareness/index.html": {
+      "sha256": "2a67b3a27452ea27f9dd57416b92356debb764b214521c8783cd162e7a8d417e",
+      "bytes": 1563
+    },
+    "problem-solving/content.js": {
+      "sha256": "ff27d3b8c87817a1c32e46a479594784f24395923a85a2bfb58264f7cf5c4fcf",
+      "bytes": 24934
+    },
+    "problem-solving/index.html": {
+      "sha256": "5ccf9f16084290a34faf4e107f46f0c7eeff212debeb7caeb40e6b4a17b239ea",
+      "bytes": 1446
+    },
+    "public-navigation.js": {
+      "sha256": "6dc4558ab7392386f184390a356526cc1d333d81c46fce815cad2c94a0136adf",
+      "bytes": 10852
+    },
+    "public-resources.js": {
+      "sha256": "6b7436eabc5c31a81ca42b61b4e3d49cce0db23ee53b0484677b2439ba300b7c",
+      "bytes": 47319
+    },
+    "reality-acceptance/content.js": {
+      "sha256": "ea32d38a79e0e53710ade4b6690c67f12cbf929ab9ee6dcded7374a04802a555",
+      "bytes": 53443
+    },
+    "reality-acceptance/index.html": {
+      "sha256": "49d701d49124d3bf65bbc3be8d935e21fc42c6eef979db73a3ebd7a364e7e7ab",
+      "bytes": 1478
+    },
+    "relationship-building/content.js": {
+      "sha256": "ee1ad65d25cb76424a2c878a65587f3c043dd2e77621f549aa9fd3d6581cddc3",
+      "bytes": 53474
+    },
+    "relationship-building/index.html": {
+      "sha256": "d3448563f210d6e4cdbab83c188ce634069bab603cd551f2bf0dd5e6b328cc50",
+      "bytes": 1516
+    },
+    "responsibility-pie/content.js": {
+      "sha256": "72e1dcbde07916696bcc8054ddd1525d327097bc260222818f9a84350cfe8fc4",
+      "bytes": 24067
+    },
+    "responsibility-pie/index.html": {
+      "sha256": "4872c30c96f460d7dd94a22b86f860fcb87907d287d98aaa9aa5f5d3d636c471",
+      "bytes": 1549
+    },
+    "retained-classics/host.css": {
+      "sha256": "d8b5104513982b8e85af02f801fba06eb781e41b30c85ed7ec08f0e5ff3f3538",
+      "bytes": 1207
+    },
+    "retained-classics/host.js": {
+      "sha256": "5aabfaf8f4a4b86bc96264dc40b4b3e6ffa7267d9055b711d67f9c73dcdf69b3",
+      "bytes": 4108
+    },
+    "retained-classics/saying-no/app-native.js": {
+      "sha256": "179ea6311205d438d1cdbe736606f21fe8c07c5bc1127192f2c03c28c2b5a4a2",
+      "bytes": 42931
+    },
+    "retained-classics/saying-no/draft-bridge.js": {
+      "sha256": "afb31f47b8e6f1f3113adbaa6258b4e8ea8fbef992e6f71b5dc4157e48a5d74c",
+      "bytes": 423
+    },
+    "retained-classics/saying-no/guided-native.css": {
+      "sha256": "e93c07a7f4360614127c59bf5e3bbbffeaca1c0706be56227e068592cdae2bdd",
+      "bytes": 4974
+    },
+    "retained-classics/saying-no/handout.html": {
+      "sha256": "63f26e236e8f82accc59e24f9c7a48d0147f3dbb59e69e281faec9ee625e1f82",
+      "bytes": 4896
+    },
+    "retained-classics/saying-no/handout.js": {
+      "sha256": "3a0e6b40cc36a4c5aeda75a1c2d7fe6928b1de5d3355c58d3c0f009324c8819c",
+      "bytes": 93
+    },
+    "retained-classics/saying-no/index.html": {
+      "sha256": "50cec83cf03b5e40641ba08b5de89fc0de59ebe42fd74985e8ee8f33b786414a",
+      "bytes": 2348
+    },
+    "retained-classics/saying-no/native.css": {
+      "sha256": "8b689a2e659d4936182e2a3ed747237decf14e8bc142cdc1fd6f02c21fda7624",
+      "bytes": 1655
+    },
+    "retained-classics/saying-no/native.html": {
+      "sha256": "6b8d1fbf8594f96b362c22ecfafb583fb8f1994d904f447671779da18e76c62b",
+      "bytes": 2751
+    },
+    "retained-classics/saying-no/pmr-reference.css": {
+      "sha256": "c5d2904125035542fed3621c2fece34665df0ff4e7c7a2999deb87a9cc25c9f6",
+      "bytes": 2668
+    },
+    "retained-classics/saying-no/practice-sheet.html": {
+      "sha256": "f9cb984b831416d3f31383c40edd68a4a5169807ae077bbf799f91de211ae387",
+      "bytes": 3823
+    },
+    "retained-classics/saying-no/readable-handout.css": {
+      "sha256": "957e1d0e4fe2e9aaaf3440e3847a7eb26aec7e580cb95f7ea77f227ac93ecda9",
+      "bytes": 514
+    },
+    "retained-classics/saying-no/readable-handout.html": {
+      "sha256": "95644a2dd9faefea7d8446e173c0098651a1f9f4fbdd8b23a8a8b3e8bb7a7966",
+      "bytes": 5867
+    },
+    "retained-classics/saying-no/style.css": {
+      "sha256": "b5d9446a61d636686a36d94e089584c2beaf53d63545644c4380386c01e8db7c",
+      "bytes": 14939
+    },
+    "retained-classics/thought-record/app-native.js": {
+      "sha256": "c5defa95af4c7d56a8d7f52114640b4ceb2b913906f57c839c4bd896237ca916",
+      "bytes": 55086
+    },
+    "retained-classics/thought-record/draft-bridge.js": {
+      "sha256": "afb31f47b8e6f1f3113adbaa6258b4e8ea8fbef992e6f71b5dc4157e48a5d74c",
+      "bytes": 423
+    },
+    "retained-classics/thought-record/guided-native.css": {
+      "sha256": "8424f3dcdc4b771497a6c6b22c7ae9e827b1e4b1e24d1d91127624d10e9af59a",
+      "bytes": 11340
+    },
+    "retained-classics/thought-record/handout.html": {
+      "sha256": "76aef6af2d1a3347f2f73888546d14cdb54ffe6489aef7eaba2d2dc3fd682416",
+      "bytes": 10193
+    },
+    "retained-classics/thought-record/index.html": {
+      "sha256": "78dfb7a737e17cdf7c494b30a410ee87fbcf2f8dd03b1025c24c35435654dbbf",
+      "bytes": 2346
+    },
+    "retained-classics/thought-record/modern-host.css": {
+      "sha256": "d45562bb9ab0634454de7c697f884d49044f69a7620d5efa82662f0d7cce5c76",
+      "bytes": 587
+    },
+    "retained-classics/thought-record/modern-layout.js": {
+      "sha256": "d582eea0137f5460860fb2188f43c040cc9d3a5ccc4d6b7a9ef97776a977cc67",
+      "bytes": 4330
+    },
+    "retained-classics/thought-record/native.css": {
+      "sha256": "fe9ddea885ddfa28678d7495c07da8d1c7eb22a8c7c8eaa190b6dd5c15ccaeab",
+      "bytes": 3561
+    },
+    "retained-classics/thought-record/native.html": {
+      "sha256": "22ef9555e20484ef779f376113b7e410b1d90855de7ad4acbdee71546768eec1",
+      "bytes": 3796
+    },
+    "retained-classics/thought-record/readable-handout.html": {
+      "sha256": "76aef6af2d1a3347f2f73888546d14cdb54ffe6489aef7eaba2d2dc3fd682416",
+      "bytes": 10193
+    },
+    "retained-classics/thought-record/style.css": {
+      "sha256": "036e9605d202fd7dc493c331e487d1a1640b817abb7d3e32d3e5fad264e8c09d",
+      "bytes": 11390
+    },
+    "retained-classics/thought-record/thought-record-materials.css": {
+      "sha256": "8c5e8bc167f40a61af50a46eb79f7c2be698f3e7c8aeaa1507cd73afdb96a230",
+      "bytes": 824
+    },
+    "retained-classics/thought-record/thought-record-reader.css": {
+      "sha256": "4180e299b0cfbd68f9b407512970b820a2197aaa843962f46a285835d8fef9f2",
+      "bytes": 1789
+    },
+    "rules-and-assumptions/content.js": {
+      "sha256": "55b4f476930836328051def2ac48f4e4ef061d85ea431571aaf963886ce67835",
+      "bytes": 45535
+    },
+    "rules-and-assumptions/index.html": {
+      "sha256": "00310dea4cc9202659539a39171945da944fabc6c2de6779800dc7b43917e744",
+      "bytes": 1486
+    },
+    "self-compassionate-behaviour/content.js": {
+      "sha256": "3266328e6a5652e900f6f9bc18981ad8f8c97726a3905fee48aec70309202a2a",
+      "bytes": 51027
+    },
+    "self-compassionate-behaviour/index.html": {
+      "sha256": "34c710032405d5e6524faaab77a12f8bcec12c18fe69953b7bb73f783e629c00",
+      "bytes": 1524
+    },
+    "self-soothe/content.js": {
+      "sha256": "45c75d81b13373907351507b48b59409d61b18e101e0a4f45b8aff5c5699c251",
+      "bytes": 17212
+    },
+    "self-soothe/index.html": {
+      "sha256": "a48f3a6e62ae0ecbe5cda7f29a38fa08dfed1bba7175a8f10609854d6e2c727b",
+      "bytes": 1426
+    },
+    "self-validation/content.js": {
+      "sha256": "169b6e447330453b4b1891d1e69073d3c72a58ed0077209728a48b2ab1be59ab",
+      "bytes": 18385
+    },
+    "self-validation/index.html": {
+      "sha256": "ce6c23a3df19b78c0b66c98b94ffc406bfa19f175d1300f84ca93fd5475d8199",
+      "bytes": 1446
+    },
+    "skills-library/help-topics.json": {
+      "sha256": "ac2eead43be0b18b684883dd855e844679f36d18b3e226e464e65bee3eedc763",
+      "bytes": 47438
+    },
+    "skills-library/implementation-status.json": {
+      "sha256": "4c5a6d7eaa4811f828e6c7aeccc620f327d9fafb0add44219efac62357b09b37",
+      "bytes": 41591
+    },
+    "skills-library/index.html": {
+      "sha256": "108564f25fd057d40f2473d386ef8f505ae02b304ab4c52795709400ec148a0d",
+      "bytes": 179184
+    },
+    "skills-library/library.css": {
+      "sha256": "4819a7fbf644d45a4fdbc3e67d08f9ea70002350a42cf1c2073688719ab6a84d",
+      "bytes": 5535
+    },
+    "skills-library/library.js": {
+      "sha256": "d684b20dea79689fc7e8de5c26d0b07fc6a9170633dbddbdede10517044436f5",
+      "bytes": 2962
+    },
+    "skills-library/search-index.json": {
+      "sha256": "fe834cfa036af6e1de0b993946508fb95f4481ba8da2fe8e055ae9d215206e32",
+      "bytes": 45004
+    },
+    "skills-map/classic-map.json": {
+      "sha256": "5ad7752e928369e8343b352c5da0dafb17da1c3770a5f336900af769706ee777",
+      "bytes": 479642
+    },
+    "skills-map/classic-overview.js": {
+      "sha256": "16ce1a0801a46e12f8bce3ee5b18b90dcc6537645667003baf498f48ed0af40d",
+      "bytes": 788
+    },
+    "skills-map/classic-overview.svg": {
+      "sha256": "6a8f037090ed8fee32afe219e91ff0429c1f415fb0551c454f691c18d5292f09",
+      "bytes": 36663
+    },
+    "skills-map/classic.css": {
+      "sha256": "f4e1d679139ac64db6fbe7954e9f3ffaae9b85f6d5ca9f8e822f90dad205ecc7",
+      "bytes": 2647
+    },
+    "skills-map/classic.js": {
+      "sha256": "a7ce3df27bfdf479b78c02955a70ca3f8e9df7582e8d1dc34caad92443f34fcf",
+      "bytes": 1240
+    },
+    "skills-map/index.html": {
+      "sha256": "11d65d29ef565c36190821c1a598839c2890127e75e1ba17a4dafe443c77df54",
+      "bytes": 463434
+    },
+    "skills-map/overview.html": {
+      "sha256": "9ac2d496cc30c0ce1ba364b175c9c910ac2b9c93c8ae9c10008f17343962e6f6",
+      "bytes": 349087
+    },
+    "style.css": {
+      "sha256": "b92e1b58cdec117ff52cdf1415607beee22f595fcc1d698c07c9185a002c7325",
+      "bytes": 8481
+    },
+    "toolmap.js": {
+      "sha256": "1b51faf8bfae063e560768be6f49a3fbb22e1ba6024ec9c6039fa90a21cec38f",
+      "bytes": 9435
+    },
+    "understanding-and-naming-emotions/content.js": {
+      "sha256": "884d4a791fd5168cca7800bed97ad11c26332e116655eefeef669d1150d6db2a",
+      "bytes": 20349
+    },
+    "understanding-and-naming-emotions/index.html": {
+      "sha256": "e22ff0af92e33753f41735763206a65a1f37e6ba858652febfe03564129d3098",
+      "bytes": 1533
+    },
+    "urge-visual/adapter.js": {
+      "sha256": "cee8132b86ddb16dffc0165f5fa9ed804437d7e6a3c7832c543fbb579ef520c8",
+      "bytes": 4229
+    },
+    "urge-visual/controller.js": {
+      "sha256": "2c0d5b107df521544ee1751fd907eb3b13ac8a4f0449acb11ce123b51a3d5342",
+      "bytes": 30970
+    },
+    "urge-visual/index.html": {
+      "sha256": "ee0739aa162d4a28c630ca1a72ecfbdfe41767ded2e32a95dd5930ccb572fb65",
+      "bytes": 2821
+    },
+    "urge-visual/manual-pause.js": {
+      "sha256": "f3af494ac180da2ab0ad17c5d8f20ead65916e7a79338ee33f2649b478c525a6",
+      "bytes": 290
+    },
+    "validation-of-others/content.js": {
+      "sha256": "0984f889d2e5f337ceeacc50a785492b48ef735675b2b782332a90de414653fa",
+      "bytes": 74837
+    },
+    "validation-of-others/index.html": {
+      "sha256": "92f1350a6ee8c74ea88ccd734317e500947b0094aa8ad74b77c9c42a25e570dc",
+      "bytes": 1210
+    },
+    "values-clarification/content.js": {
+      "sha256": "8f67e164adfa30c21aefababd13b2884851da1419050d27f2238d9c2947086fb",
+      "bytes": 20009
+    },
+    "values-clarification/index.html": {
+      "sha256": "c2ad86cc7e37f485e328086439db857fb73c5b2eb11bfd889400c34dea752f30",
+      "bytes": 1456
+    },
+    "wise-mind-accepts/content.js": {
+      "sha256": "83270e0031d56a9035c103154893db6d0e3c14c33a9e21103583831a8ddac487",
+      "bytes": 36940
+    },
+    "wise-mind-accepts/index.html": {
+      "sha256": "36178e83c46519e06052597e7292b20fe4d33dac39070dd5616136a1c1ea4e8f",
+      "bytes": 1482
+    },
+    "wise-mind-guided/content.js": {
+      "sha256": "cc04e1170666e0f595c936a9ad804e5056a9eff8c4ebeab28db293d012401a93",
+      "bytes": 25942
+    },
+    "wise-mind-guided/index.html": {
+      "sha256": "5a06707c2b7f831f84e8ce84df6c9513186b14c19d6e7042b1733889dee2e509",
+      "bytes": 1540
+    },
+    "wise-mind-guided/retained-content.js": {
+      "sha256": "39e6900792e9346b0ac1ececf30e075a876c3248216b2f7cf0a002c64f3fcee6",
+      "bytes": 4029
+    },
+    "worry-visual/adapter.js": {
+      "sha256": "1a51a9f8b741833e29b5e0504d47b09846bbb0c5bab555599ee4a0c9f64fc66c",
+      "bytes": 4483
+    },
+    "worry-visual/controller.js": {
+      "sha256": "8e6c727441772cf1e36e9eef8d7e862136f570411cec4a5c2c2d7818a98d1e28",
+      "bytes": 31642
+    },
+    "worry-visual/default-setting.js": {
+      "sha256": "8e890446fd232fcdc7bb49f0e4dd7ac14a5c6f7f49d04fb41c90c79e05034fb7",
+      "bytes": 644
+    },
+    "worry-visual/example-duration.js": {
+      "sha256": "fd0e24cc7b531aca105f155856cc51173286bd30e84a810574974111e9b46d04",
+      "bytes": 451
+    },
+    "worry-visual/index.html": {
+      "sha256": "5407cf8b7eaaaf7cde297f7c587653bb637a9b2b3878e8d844b210c8a8de73fa",
+      "bytes": 4681
+    },
+    "worry-visual/optional-review.js": {
+      "sha256": "b81a5a92bf6576766c698202ab5346105c2c0fde67305370feadcd827903bad7",
+      "bytes": 1426
+    }
+  },
+  "archiveSHA256": "4aeb5d84b0ea392aad7f1233e062abc2a9de46db1aa8450c2f7adb265c967987",
+  "archiveBytes": 1220930
+}
