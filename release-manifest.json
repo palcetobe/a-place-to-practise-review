@@ -1,14 +1,14 @@
 {
   "schema": "public-in-exercise-review-v1",
-  "baseCommit": "90c09e0ea112baf21667ce926e4e1caed76c1dd3",
+  "baseCommit": "f44a07a80a0720514b96a9d7d2eb9f0e880ffeaf",
   "status": "draft-review",
   "clinicalAcceptance": false,
   "listeningAcceptance": false,
   "browserAcceptance": false,
   "inExerciseNarration": true,
   "integratedNarration": true,
-  "recordings": 678,
-  "coveredExerciseRoutes": 32,
+  "recordings": 701,
+  "coveredExerciseRoutes": 34,
   "coverage": "Partial; exact current visible authored paragraphs only. No autoplay and no personal note narration.",
   "files": {
     ".nojekyll": {
@@ -32,7 +32,7 @@
       "bytes": 1643
     },
     "app.js": {
-      "sha256": "8240d3d9934a4a28cf0d02145542eb8dd79969dee5fce74799830f9c15fecd54",
+      "sha256": "8f5ee49bdc205d34ce7225b17fa42103c4344dd2d1d537e88e3e1e770b48c61d",
       "bytes": 25948
     },
     "assertive-criticism/content.js": {
@@ -264,16 +264,16 @@
       "bytes": 6432
     },
     "assets/in-exercise-narration-data.js": {
-      "sha256": "71fe2d9ace4ab0343d6274bbc7988c4e4022616aa0f740deb2e1fd576eaa57ba",
-      "bytes": 285603
+      "sha256": "d32a4db9b2ba408ceaf4e5b28f73493519089a1ef7b6b48ca3f2f8fe0239dbae",
+      "bytes": 292428
     },
     "assets/in-exercise-narration.css": {
       "sha256": "5e63afe11f025c825fc9676d387453ddefd5709b4871f80e0bfa9923fd1bae8f",
       "bytes": 923
     },
     "assets/in-exercise-narration.js": {
-      "sha256": "af9d006b72722875563903744658b95134aeaf43c1c217277b35feaf8cc393e6",
-      "bytes": 11207
+      "sha256": "c5ad4d755faba5d8f43a416d165149351f3a045175343a33eb64072921015409",
+      "bytes": 11811
     },
     "assets/interpersonal-model.js": {
       "sha256": "b6221933c08970ff16e00d5c3e257cb61bfc2cbdb10c0e2ba46ad2fdcd208a6f",
@@ -726,6 +726,82 @@
     "assets/narration/audio/ba--review--notice.flac": {
       "sha256": "d63ae194e9a026e90d81ba70acc2cd1ac6453d555c21c50b1d8bec298d5da941",
       "bytes": 384669
+    },
+    "assets/narration/audio/boundary-modern--choose-permission.flac": {
+      "sha256": "c057c35e5a3315fd47036a9490a450c5b7af95f189caa70f4c392ae3d570bea7",
+      "bytes": 108899
+    },
+    "assets/narration/audio/boundary-modern--choose-situation.flac": {
+      "sha256": "6ca5e71cba93f1544ba47e166cec5053f03cde2b63971cde9d81ed98a98cbc83",
+      "bytes": 215095
+    },
+    "assets/narration/audio/boundary-modern--close.flac": {
+      "sha256": "af5c87b7091084e442fdc10b3378cde5998542e130980d15dc2309ec4353ddc6",
+      "bytes": 292970
+    },
+    "assets/narration/audio/boundary-modern--compare-family-blame.flac": {
+      "sha256": "141ca8baa77a080b84e86d9ce88c426b95049be6356f4684be60602af9ac044f",
+      "bytes": 213431
+    },
+    "assets/narration/audio/boundary-modern--compare-family-clear.flac": {
+      "sha256": "32db28167366c490263364130f0ebe21dda1043127c639c78ab5369647bb742f",
+      "bytes": 258205
+    },
+    "assets/narration/audio/boundary-modern--compare-family-maybe.flac": {
+      "sha256": "337b521a8892bfbc8fb92e66fae26139723edf1d1f0f7d5a10778fb81a9c02f6",
+      "bytes": 232205
+    },
+    "assets/narration/audio/boundary-modern--compare-friend-blame.flac": {
+      "sha256": "16410854d0277c8f781ace36c5102ee0996c0ce02f37b85421ac7511b47fc95e",
+      "bytes": 238133
+    },
+    "assets/narration/audio/boundary-modern--compare-friend-clear.flac": {
+      "sha256": "b3f2b7399414767e8f56161f29dbfabc077762dbcbf37256e4ac1ae8b9bde217",
+      "bytes": 219620
+    },
+    "assets/narration/audio/boundary-modern--compare-friend-maybe.flac": {
+      "sha256": "e88119a80d62c7dcec961a71a28d61debe8292750250ceab89d16f9d745623dc",
+      "bytes": 201962
+    },
+    "assets/narration/audio/boundary-modern--example-friend-note.flac": {
+      "sha256": "5a96f23a08fb34543c8e343c78a11b55f1630a61d995042547ae4aab4a1c24e7",
+      "bytes": 192849
+    },
+    "assets/narration/audio/boundary-modern--example-interpretation.flac": {
+      "sha256": "6175e94a454366cffb6cd67207a234e970d0bbd1ab7479cfad62025a81815266",
+      "bytes": 316003
+    },
+    "assets/narration/audio/boundary-modern--fit.flac": {
+      "sha256": "03123a0f62ae8602f63f61bec712ebe6cc8ad10845acd3533e1921ececedd3b1",
+      "bytes": 578483
+    },
+    "assets/narration/audio/boundary-modern--pressure-fictional.flac": {
+      "sha256": "11d1d95f36e925e65d3e508b831c51ed32967efc8974821a282a49b5957e0bd3",
+      "bytes": 357334
+    },
+    "assets/narration/audio/boundary-modern--pressure-personal.flac": {
+      "sha256": "ec9ec153ff60f54f5d508433403d8dd3f604069041f9fa7dbbb6a5d380ecb5ef",
+      "bytes": 218284
+    },
+    "assets/narration/audio/boundary-modern--private-check.flac": {
+      "sha256": "4d61bf9551111f73267451108794618acbe23d6bff543dded5fab4a40791f83c",
+      "bytes": 144866
+    },
+    "assets/narration/audio/boundary-modern--reflection.flac": {
+      "sha256": "557d78942d474b76c37dad5e14f105272c30014c2b4c31ba0fc9abcf5b6a3cbf",
+      "bytes": 184248
+    },
+    "assets/narration/audio/boundary-modern--scenario-family.flac": {
+      "sha256": "8c135d46a616574089a151590a545e5304558b43f781a924ee9069180e3b26c3",
+      "bytes": 582377
+    },
+    "assets/narration/audio/boundary-modern--scenario-friend.flac": {
+      "sha256": "7f4af40372d14c6f560d7e45f4fd708ed84c2da184e320b0d9e2d0702ddf7c27",
+      "bytes": 424480
+    },
+    "assets/narration/audio/boundary-modern--starting-point.flac": {
+      "sha256": "b8a40fe8789752727be4ecc827cac816b43c8fef98f8cd3e5618bf2c1ab10509",
+      "bytes": 214909
     },
     "assets/narration/audio/breathing--close.flac": {
       "sha256": "274b2c2095a264ea7f2d3265ed836dfc7df8dfb489b5ab8d5a2793b33237e905",
@@ -2579,6 +2655,22 @@
       "sha256": "16fd5a2fd362e432f95f6229c88a63601ac0253fe885a145f1b7bc6f344ac7cc",
       "bytes": 605149
     },
+    "assets/narration/audio/thought-modern--checking.flac": {
+      "sha256": "ba90d579d7133e076c9418aff9b0b24eb1506aa581672cb97a20a2377972b80c",
+      "bytes": 151359
+    },
+    "assets/narration/audio/thought-modern--direct-practice.flac": {
+      "sha256": "ca4aa1412570fa9b1145af3aaca7e2a7bddf8fb29a4b3cd2ad47f3961738aaa1",
+      "bytes": 221549
+    },
+    "assets/narration/audio/thought-modern--participation.flac": {
+      "sha256": "6f2d6bd748027bf442f08462cf388a986267aa9ef8e0663dc7bb501b267b893c",
+      "bytes": 169449
+    },
+    "assets/narration/audio/thought-modern--status.flac": {
+      "sha256": "8c0479455b31048da0a89d24128b56fb7445be0be43834174b93af31e65ec2e2",
+      "bytes": 197913
+    },
     "assets/narration/audio/uncertainty--close.flac": {
       "sha256": "06262e5bf94f69d9385de73643e603f0eaad5aae9b3844c02dd95735a99b14f5",
       "bytes": 252408
@@ -3183,6 +3275,10 @@
       "sha256": "ca1bfa6e886abc8b782431cdd8990e8b023cc270310597f251a7d57ef0a77d13",
       "bytes": 3414
     },
+    "assets/retained-practice-narration.js": {
+      "sha256": "0f3632e91dc8097c4f00348382c37fb4d3bf0f9d418435f9d0660e82fe9f040b",
+      "bytes": 5375
+    },
     "assets/rules-assumptions-model.js": {
       "sha256": "91f13b2603be0896425470c3cede75ec4b331051d4b033a503a3bf0a7cf4993a",
       "bytes": 2509
@@ -3500,7 +3596,7 @@
       "bytes": 1842
     },
     "index.html": {
-      "sha256": "523d32bdc779550206808b03d7dd34946429efb719cb728df5979576357d08f8",
+      "sha256": "f4931b07fd49e67069f55fcdb6861de919a2fe52ab2ca3cddddf1ccb8eab64c4",
       "bytes": 3489
     },
     "interpersonal-dearman/content.js": {
@@ -3696,8 +3792,8 @@
       "bytes": 4108
     },
     "retained-classics/saying-no/app-native.js": {
-      "sha256": "179ea6311205d438d1cdbe736606f21fe8c07c5bc1127192f2c03c28c2b5a4a2",
-      "bytes": 42931
+      "sha256": "d6c20e0e4ba25823541f1381c2e26f98256c42044c0b08601b872b53169b3b4d",
+      "bytes": 43861
     },
     "retained-classics/saying-no/draft-bridge.js": {
       "sha256": "afb31f47b8e6f1f3113adbaa6258b4e8ea8fbef992e6f71b5dc4157e48a5d74c",
@@ -3716,16 +3812,16 @@
       "bytes": 93
     },
     "retained-classics/saying-no/index.html": {
-      "sha256": "50cec83cf03b5e40641ba08b5de89fc0de59ebe42fd74985e8ee8f33b786414a",
-      "bytes": 2348
+      "sha256": "5c57b0a32527f3c095dca652fd7604b39ebea89c6de173b965ad7d6b30942c8d",
+      "bytes": 2398
     },
     "retained-classics/saying-no/native.css": {
       "sha256": "8b689a2e659d4936182e2a3ed747237decf14e8bc142cdc1fd6f02c21fda7624",
       "bytes": 1655
     },
     "retained-classics/saying-no/native.html": {
-      "sha256": "6b8d1fbf8594f96b362c22ecfafb583fb8f1994d904f447671779da18e76c62b",
-      "bytes": 2751
+      "sha256": "5451977290a816d1880cfdc1051db3ff8aa84abff0fe70dfd93c7c784a21379f",
+      "bytes": 3032
     },
     "retained-classics/saying-no/pmr-reference.css": {
       "sha256": "c5d2904125035542fed3621c2fece34665df0ff4e7c7a2999deb87a9cc25c9f6",
@@ -3748,8 +3844,8 @@
       "bytes": 14939
     },
     "retained-classics/thought-record/app-native.js": {
-      "sha256": "c5defa95af4c7d56a8d7f52114640b4ceb2b913906f57c839c4bd896237ca916",
-      "bytes": 55086
+      "sha256": "ef3fb10d895ef1cd88b7de284c36962e3badd9632ed78169b0dbd0095b632910",
+      "bytes": 55854
     },
     "retained-classics/thought-record/draft-bridge.js": {
       "sha256": "afb31f47b8e6f1f3113adbaa6258b4e8ea8fbef992e6f71b5dc4157e48a5d74c",
@@ -3764,8 +3860,8 @@
       "bytes": 10193
     },
     "retained-classics/thought-record/index.html": {
-      "sha256": "78dfb7a737e17cdf7c494b30a410ee87fbcf2f8dd03b1025c24c35435654dbbf",
-      "bytes": 2346
+      "sha256": "b647b2805da4f77f74525cf0cca9a4dc11dfac962c8897bb2325f73ea533e564",
+      "bytes": 2396
     },
     "retained-classics/thought-record/modern-host.css": {
       "sha256": "d45562bb9ab0634454de7c697f884d49044f69a7620d5efa82662f0d7cce5c76",
@@ -3780,8 +3876,8 @@
       "bytes": 3561
     },
     "retained-classics/thought-record/native.html": {
-      "sha256": "22ef9555e20484ef779f376113b7e410b1d90855de7ad4acbdee71546768eec1",
-      "bytes": 3796
+      "sha256": "0836a283d2a2cd4126363d57e11f1da3db4a9bd307afed4071541ad14d091861",
+      "bytes": 4179
     },
     "retained-classics/thought-record/readable-handout.html": {
       "sha256": "76aef6af2d1a3347f2f73888546d14cdb54ffe6489aef7eaba2d2dc3fd682416",
@@ -3852,11 +3948,11 @@
       "bytes": 47438
     },
     "skills-library/implementation-status.json": {
-      "sha256": "ea2ca76702b0d3272cd0647cba45a2bf89d438ec72a115bde3180bf48a53f17d",
-      "bytes": 51122
+      "sha256": "b4d2fbef35a9749ad415486e23be8ee3484985bc98b66f812ab870e4dd8a20b1",
+      "bytes": 51125
     },
     "skills-library/index.html": {
-      "sha256": "05e3a9d35180827f208b7d4d21da89db4b32800a7ddba9326d39a0b4fc8008b0",
+      "sha256": "a9a9187fcda6e56164089fcc230bfd087f7eebe38ace6acaaca6b6e2bba5439b",
       "bytes": 186116
     },
     "skills-library/library.css": {
@@ -4011,8 +4107,8 @@
   "archives": [
     {
       "path": "site-runtime.zip",
-      "sha256": "b58ded52da3b8b1ecb95a22a976457b9c040c5a4964f4800c81bf232a7400093",
-      "bytes": 1389922,
+      "sha256": "14993f7f43c83ca8119f2ab4e88abaff7a6f24d3ac0331b04b9c3d74cf30ea6b",
+      "bytes": 1394612,
       "files": [
         ".nojekyll",
         "accepting-uncertainty/content.js",
@@ -4129,6 +4225,7 @@
         "assets/relationship-building-model.js",
         "assets/relationship-building-practice.js",
         "assets/relationship-building.css",
+        "assets/retained-practice-narration.js",
         "assets/rules-assumptions-model.js",
         "assets/rules-assumptions-practice.js",
         "assets/rules-assumptions.css",
@@ -5293,6 +5390,36 @@
         "assets/narration/audio/looping-thought--prompt--2.flac",
         "assets/narration/audio/looping-thought--prompt--3.flac",
         "assets/narration/audio/looping-thought--why.flac"
+      ]
+    },
+    {
+      "path": "narration-media-41.zip",
+      "sha256": "d065c22a8603279dd2b339b1add2171a058d8859d5238cb0e588592afc70c6bb",
+      "bytes": 5920421,
+      "files": [
+        "assets/narration/audio/boundary-modern--choose-permission.flac",
+        "assets/narration/audio/boundary-modern--choose-situation.flac",
+        "assets/narration/audio/boundary-modern--close.flac",
+        "assets/narration/audio/boundary-modern--compare-family-blame.flac",
+        "assets/narration/audio/boundary-modern--compare-family-clear.flac",
+        "assets/narration/audio/boundary-modern--compare-family-maybe.flac",
+        "assets/narration/audio/boundary-modern--compare-friend-blame.flac",
+        "assets/narration/audio/boundary-modern--compare-friend-clear.flac",
+        "assets/narration/audio/boundary-modern--compare-friend-maybe.flac",
+        "assets/narration/audio/boundary-modern--example-friend-note.flac",
+        "assets/narration/audio/boundary-modern--example-interpretation.flac",
+        "assets/narration/audio/boundary-modern--fit.flac",
+        "assets/narration/audio/boundary-modern--pressure-fictional.flac",
+        "assets/narration/audio/boundary-modern--pressure-personal.flac",
+        "assets/narration/audio/boundary-modern--private-check.flac",
+        "assets/narration/audio/boundary-modern--reflection.flac",
+        "assets/narration/audio/boundary-modern--scenario-family.flac",
+        "assets/narration/audio/boundary-modern--scenario-friend.flac",
+        "assets/narration/audio/boundary-modern--starting-point.flac",
+        "assets/narration/audio/thought-modern--checking.flac",
+        "assets/narration/audio/thought-modern--direct-practice.flac",
+        "assets/narration/audio/thought-modern--participation.flac",
+        "assets/narration/audio/thought-modern--status.flac"
       ]
     }
   ],

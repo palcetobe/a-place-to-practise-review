@@ -5,10 +5,10 @@ from urllib.parse import urlsplit,unquote
 import hashlib,json,zipfile
 sha=lambda b:hashlib.sha256(b).hexdigest()
 raw=Path('release-manifest.json').read_bytes()
-assert sha(raw)=='b088bce1a865751dd0c1e9265393c29342fc38623ecb8d49883ae7982ad99a8e','Manifest hash mismatch'
+assert sha(raw)=='6f73687058f21dc432f9ae8344efe2b0bc694b9d365b99b12eef937db9bef935','Manifest hash mismatch'
 m=json.loads(raw);root=Path('site')
 assert not root.exists(),'Refuse to merge with an existing build'
-assert m['recordings']==678 and m['coveredExerciseRoutes']==32
+assert m['recordings']==701 and m['coveredExerciseRoutes']==34
 assert m['additionalUnrecordedScripts']==703 and m['additionalUnrecordedRoutes']==26
 assert m['narrationIncrement']['newRecordings']==33
 assert m['catalogueCards']==83 and m['implementationEntries']==42 and m['libraryEntrypoints']==58
@@ -61,4 +61,4 @@ for p in root.rglob('*.html'):
   if dest.is_dir():dest=dest/'index.html'
   assert dest.is_file(),(p,value)
   count+=1
-print(json.dumps({'status':'PASS','files':len(seen),'localHtmlLinks':count,'staticBytes':sum(v['bytes']for v in seen.values()),'recordings':678,'coveredExerciseRoutes':32,'integratedNarration':True,'clinicalAcceptance':False,'listeningAcceptance':False,'browserAcceptance':False}))
+print(json.dumps({'status':'PASS','files':len(seen),'localHtmlLinks':count,'staticBytes':sum(v['bytes']for v in seen.values()),'recordings':701,'coveredExerciseRoutes':34,'integratedNarration':True,'clinicalAcceptance':False,'listeningAcceptance':False,'browserAcceptance':False}))
