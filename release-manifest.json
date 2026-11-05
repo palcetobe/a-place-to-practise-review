@@ -1,14 +1,14 @@
 {
   "schema": "public-in-exercise-review-v1",
-  "baseCommit": "54197cf0d0c24964295ad4409f5f7d74645c55c0",
+  "baseCommit": "8eaa9e46d3b69f6627bead6bd96cd00b74a9da95",
   "status": "draft-review",
   "clinicalAcceptance": false,
   "listeningAcceptance": false,
   "browserAcceptance": false,
   "inExerciseNarration": true,
   "integratedNarration": true,
-  "recordings": 635,
-  "coveredExerciseRoutes": 29,
+  "recordings": 668,
+  "coveredExerciseRoutes": 31,
   "coverage": "Partial; exact current visible authored paragraphs only. No autoplay and no personal note narration.",
   "files": {
     ".nojekyll": {
@@ -32,7 +32,7 @@
       "bytes": 1643
     },
     "app.js": {
-      "sha256": "f5ec266933b37072b206e1bf619d056fa77db7a820d90c3aa1da781656f8c6d4",
+      "sha256": "6fd48df3e903545ee0bca0254b739e1e88473357e4c90b904ba24d03714cb5ed",
       "bytes": 25948
     },
     "assertive-criticism/content.js": {
@@ -124,8 +124,8 @@
       "bytes": 4169
     },
     "assets/clinical-guided.js": {
-      "sha256": "7947c694c9dd12df85876bd266622dc2ea408b57f976cd62e82f1177cbf86c9c",
-      "bytes": 13896
+      "sha256": "3ca96889288f456d9283340129a37754ea8f3633fee3238e35c949397cf08dda",
+      "bytes": 15433
     },
     "assets/compassionate-thought-diary-model.js": {
       "sha256": "6d19db315e346793148f3ed03fd68cc7c15e5746bb7f16b728cb021eb17418a6",
@@ -264,8 +264,8 @@
       "bytes": 6432
     },
     "assets/in-exercise-narration-data.js": {
-      "sha256": "12f84d8406cc8026928183a7245ee179ab905de3f74aecc6da4183c9ea1c9333",
-      "bytes": 263928
+      "sha256": "2e961109ac1ff6296434adcada92e41dc41ee99d84094ae3d1983ae470be3abd",
+      "bytes": 280005
     },
     "assets/in-exercise-narration.css": {
       "sha256": "5e63afe11f025c825fc9676d387453ddefd5709b4871f80e0bfa9923fd1bae8f",
@@ -330,6 +330,10 @@
     "assets/interpersonal.css": {
       "sha256": "3fe04bca7699c1db66afc55dd7c453831bccc92548cf9b8bc4bbc16911f59be3",
       "bytes": 2686
+    },
+    "assets/legacy-practice-narration.js": {
+      "sha256": "b8a666600e3921ef5c94ad048e9d087a54b35c84ff8093cc07cc85d07bf7ae87",
+      "bytes": 1849
     },
     "assets/library-home.js": {
       "sha256": "8ad61d5e29c56739e95560b423583ae82a5b1ae75d938e1b043b3081bf822293",
@@ -2599,6 +2603,70 @@
       "sha256": "16fd5a2fd362e432f95f6229c88a63601ac0253fe885a145f1b7bc6f344ac7cc",
       "bytes": 605149
     },
+    "assets/narration/audio/urge--acted.flac": {
+      "sha256": "b173916eeddda84861494db3d4a669dd48eda8ca183008431705a67346d5459c",
+      "bytes": 646485
+    },
+    "assets/narration/audio/urge--anchor--body.flac": {
+      "sha256": "b6a7e176f8914174f4c50779f43273ceb2c2e5dd6555cdd84f91234da192eb5c",
+      "bytes": 141228
+    },
+    "assets/narration/audio/urge--anchor--surroundings.flac": {
+      "sha256": "e965c6874c4075658e5e343961f096ccd5a26b61322f94b77ff70271b8101775",
+      "bytes": 162389
+    },
+    "assets/narration/audio/urge--finish.flac": {
+      "sha256": "0d28443a4919f555746278b3f1097d23fce4cc3d47ef0951ffec37e60417b51c",
+      "bytes": 659470
+    },
+    "assets/narration/audio/urge--intro.flac": {
+      "sha256": "2da690400b9a4f6c9fd63862fa21fe1de87bfe15decd10ab7c66f03159c171c1",
+      "bytes": 849109
+    },
+    "assets/narration/audio/urge--optional--barriers.flac": {
+      "sha256": "3bdbccf70e627f66455c53888dbd9f95eb8da1c599576ed739cf2b9e3b4aeb18",
+      "bytes": 1024187
+    },
+    "assets/narration/audio/urge--optional--example.flac": {
+      "sha256": "f7f5a9b825b9cd9b374d762fa4b48d69489a740f8c6b5d98689d79101e14ca02",
+      "bytes": 990225
+    },
+    "assets/narration/audio/urge--optional--learn.flac": {
+      "sha256": "f161430dc1417f583253ff56ff0df22ba4a7cc20fcb68fb09318806f5d3553e6",
+      "bytes": 913191
+    },
+    "assets/narration/audio/urge--practice--notice.flac": {
+      "sha256": "ac366953b0db8d2aaf344aa23fe26384dd677e7784130674196bb09e54ac6eab",
+      "bytes": 553435
+    },
+    "assets/narration/audio/urge--practice--return.flac": {
+      "sha256": "31c6518db47586815aab61eff5ee23d1761de7d4d6b0e951c09c58810b8ad32c",
+      "bytes": 284099
+    },
+    "assets/narration/audio/urge--practice--safety.flac": {
+      "sha256": "cb7064939c8859bd945235b85006b3fb44c15f27a1a1aaad6348fc54bcfa5ab9",
+      "bytes": 178523
+    },
+    "assets/narration/audio/urge--prepare.flac": {
+      "sha256": "7219ea8c448d2564b8cb368fe63c78b9873191e3754959114c03909e71f345d9",
+      "bytes": 624959
+    },
+    "assets/narration/audio/urge--privacy.flac": {
+      "sha256": "a7bad4fc8e83cf7727399e028a79d3e69a65fcbc96dfe28dfa35dd581952fba8",
+      "bytes": 576851
+    },
+    "assets/narration/audio/urge--ratings--graph-description.flac": {
+      "sha256": "1f045409e3a7d362e88a71665e1eaa5fa142bd1fedecb7de86e5ce321b24cf72",
+      "bytes": 317220
+    },
+    "assets/narration/audio/urge--ratings--instructions.flac": {
+      "sha256": "3eb73cdf348060e5644846bfee6d44328ba7501c2a7037ec9b71748a85fce62a",
+      "bytes": 500763
+    },
+    "assets/narration/audio/urge--timer--ended.flac": {
+      "sha256": "e4d17cf1da97d843902b65d598a4e7010932b4509648477a9a207b3e2263a842",
+      "bytes": 148132
+    },
     "assets/narration/audio/validation--close.flac": {
       "sha256": "a90d4237fa979adc0fdafe4da7452434ca4cac0c360adea9684ea80a8ee99a02",
       "bytes": 221635
@@ -2947,6 +3015,74 @@
       "sha256": "a3c2fefe5d8c909b8668ce8c9b4397a88358f17a01127de44d1bd3bb46d5dfc3",
       "bytes": 580971
     },
+    "assets/narration/audio/worry--finish--now.flac": {
+      "sha256": "f22a348d558c2241fd258740fb6f2c6492e97d30a8f81c3c6bad4b8fe3273200",
+      "bytes": 351530
+    },
+    "assets/narration/audio/worry--finish--review.flac": {
+      "sha256": "02f416c987389f32186bfa0443d1277de4cc322d2c0ef6a684f27301eac52a26",
+      "bytes": 1015378
+    },
+    "assets/narration/audio/worry--intro.flac": {
+      "sha256": "b1f09877c031b7891f69de3254a97f47bc7e1a18daa55cc7bf494a858efae252",
+      "bytes": 681528
+    },
+    "assets/narration/audio/worry--optional--example.flac": {
+      "sha256": "6d95bff0a02c618958ead899d02d6ab45c3635afc6a3930245aa43c12b44a3b3",
+      "bytes": 1338564
+    },
+    "assets/narration/audio/worry--optional--learn.flac": {
+      "sha256": "88cce2bf2a9367aa48f9cb1b543176519c582c808d738ec7ffcc049989527cfc",
+      "bytes": 666111
+    },
+    "assets/narration/audio/worry--prepare.flac": {
+      "sha256": "b39288ad2e94d8bfdf105719485b4394d323a86f26b8ec59d7f10c8a42593e1b",
+      "bytes": 680061
+    },
+    "assets/narration/audio/worry--privacy.flac": {
+      "sha256": "d3f3132b3f55c31f9235e6983b185f00174253e9c9a8671867ee3434ca4a99c4",
+      "bytes": 538456
+    },
+    "assets/narration/audio/worry--rehearsal--1.flac": {
+      "sha256": "3248762180c849efe350700a2a5d781660a754cb6cf2f537d5d64d6bf5cc7192",
+      "bytes": 321584
+    },
+    "assets/narration/audio/worry--rehearsal--2.flac": {
+      "sha256": "62f4e3334211d786bd649282438409f6f4be80d4c924ac3aaab0b286dccbb5cb",
+      "bytes": 325445
+    },
+    "assets/narration/audio/worry--rehearsal--3.flac": {
+      "sha256": "090eb6c056ea3543351bc76655a493c39e309e8529fb4d541c717558ca2dbc3c",
+      "bytes": 718250
+    },
+    "assets/narration/audio/worry--response--act.flac": {
+      "sha256": "4e2aaf0c474f9d9788d2f2cce9ca8125b296108d2b2fffb5c026eaeb686b93d2",
+      "bytes": 497154
+    },
+    "assets/narration/audio/worry--response--mixed.flac": {
+      "sha256": "02d41daf5206ce538093012f54787047a9a7a4c92788992169e3d53affc591c5",
+      "bytes": 421931
+    },
+    "assets/narration/audio/worry--response--none.flac": {
+      "sha256": "afc786a8ea24cca8f500bba8b9d0905b3f243aa4a9c77f0ee9f31273d5af60ad",
+      "bytes": 179060
+    },
+    "assets/narration/audio/worry--response--uncertain.flac": {
+      "sha256": "3ae8a1b9840223e36ebde55ef9864613e83a0d17951b2db20e25c3150516d2c7",
+      "bytes": 538840
+    },
+    "assets/narration/audio/worry--review-orient.flac": {
+      "sha256": "78b17794c81315b814225a0e074ce8ec356369a054327afce30c768e2390e93e",
+      "bytes": 231797
+    },
+    "assets/narration/audio/worry--review-sort.flac": {
+      "sha256": "fe1b6fcc98b28c39cbc21fe26e368d101d3cc6ab045fab6cdf05bbbc2b30d411",
+      "bytes": 1068211
+    },
+    "assets/narration/audio/worry--timer--instructions.flac": {
+      "sha256": "1958d6a1dd0cb69aeda1f5d4239156d3a8270ea174959238c8887d68d78f26e7",
+      "bytes": 813539
+    },
     "assets/night-skill-model.js": {
       "sha256": "54dc28b51dc0d451c9e846a392318897bf8d21171dd0c157b262cd600259bd1c",
       "bytes": 1942
@@ -3031,13 +3167,61 @@
       "sha256": "bb681338fb53248f8dd9b51b1a95030a44461df15419118602451f0b300ba174",
       "bytes": 3568
     },
+    "assets/self-reinforcement-model.js": {
+      "sha256": "f79a360ed3b14b2c6a92bad64eadc4a6ccc797ecd13b668f929cd7b8fe7e910c",
+      "bytes": 2536
+    },
+    "assets/self-reinforcement-practice.js": {
+      "sha256": "a694257379e81f3da6bde2fce29d42f6c587d14cde3b47dd39c1dec73063a3b1",
+      "bytes": 12271
+    },
+    "assets/self-reinforcement.css": {
+      "sha256": "44cb8ef0c0c84d596f4ce810e29e8c0d50d3ec3951e406c9b7366b7a339a6928",
+      "bytes": 3348
+    },
+    "assets/shaping-self-use-model.js": {
+      "sha256": "9131b55f74fbb199b5b957d13d88c0ccc20816999b530936fae31f67ffad60a8",
+      "bytes": 2533
+    },
+    "assets/shaping-self-use-practice.js": {
+      "sha256": "178d956a4e6cfba211675b1b1b761c35a781b2a6e84ab849e354d2c8b253626e",
+      "bytes": 12261
+    },
+    "assets/shaping-self-use.css": {
+      "sha256": "224b797c45d9dffd470706e21f7f0233d6c200b7429947c7176caa886912741d",
+      "bytes": 3304
+    },
     "assets/shared-support-chrome.js": {
       "sha256": "adb841f4f6faaec8f077c05250dcaee103f9d4a7885b262e22b77bb5e9ecac00",
       "bytes": 1938
     },
+    "assets/solution-focused-observation-model.js": {
+      "sha256": "fc3bf009566f5df3a248665185f86246b680413690cda73bf5d5bc767ef3254d",
+      "bytes": 2519
+    },
+    "assets/solution-focused-observation-practice.js": {
+      "sha256": "1330cbf6ee6a34fb3d118273ec1eb5251548477d45652d4478ba01504f85ab0e",
+      "bytes": 12206
+    },
+    "assets/solution-focused-observation.css": {
+      "sha256": "d1daf107a142b5821388d578cec998f1aa5597e419e522bec331bb908109d705",
+      "bytes": 3568
+    },
     "assets/support-contact-spacing.css": {
       "sha256": "802ce274e912f6ac15e3b79573b54ed3473093898b0d9a7becf9a0d0729b66c6",
       "bytes": 164
+    },
+    "assets/task-focused-attention-model.js": {
+      "sha256": "44e8fcd749a5bed605bb120f4c2a7cb94020d14b58abb52e815b408e0b1b5f7e",
+      "bytes": 2513
+    },
+    "assets/task-focused-attention-practice.js": {
+      "sha256": "d9bab0bb0672bb5ad7e77fc9ed06587afc78a2ced6b406b7c53ef20bedf88799",
+      "bytes": 12182
+    },
+    "assets/task-focused-attention.css": {
+      "sha256": "cdfdc79354383d73a0b678da45acaacee2c0f21a78334d75002c0b077ffd4c93",
+      "bytes": 3436
     },
     "assets/validation-others-model.js": {
       "sha256": "dcc2c13fbe771acbd8b83f451ab2e500aabd78d6a1d345e05a756539d46a5356",
@@ -3276,7 +3460,7 @@
       "bytes": 1842
     },
     "index.html": {
-      "sha256": "c7f7b7c5acbfdda0f34348c449b274cfa0df060feb95ec116857f80b6dd47fc5",
+      "sha256": "0502aed512efd413c10997eb34a2ad3be143b98007ed3278833c13cb21a5df9b",
       "bytes": 3489
     },
     "interpersonal-dearman/content.js": {
@@ -3591,6 +3775,14 @@
       "sha256": "34c710032405d5e6524faaab77a12f8bcec12c18fe69953b7bb73f783e629c00",
       "bytes": 1524
     },
+    "self-reinforcement/content.js": {
+      "sha256": "15a09e2487d73223c6a28c76d5a37b9aa5d425d9d7112a1fd71765ffbf1ac952",
+      "bytes": 48653
+    },
+    "self-reinforcement/index.html": {
+      "sha256": "5b5a8ba603b40895e03c84cd7b5a4a01e3b440f5b9368f1ef5a6b18f5cb2e1d8",
+      "bytes": 1591
+    },
     "self-soothe/content.js": {
       "sha256": "45c75d81b13373907351507b48b59409d61b18e101e0a4f45b8aff5c5699c251",
       "bytes": 17212
@@ -3607,17 +3799,25 @@
       "sha256": "c8a62f0a09ea177c4ead6368fa91aecfcb3999298a57f4c9335b82f8e8ba508b",
       "bytes": 1851
     },
+    "shaping-self-use/content.js": {
+      "sha256": "74057622e11d2bc80a921837ef5d225289ad0361126ada1460cbf8788459c86a",
+      "bytes": 51809
+    },
+    "shaping-self-use/index.html": {
+      "sha256": "12a7a04adcd26ba262fd701cbb746cbab9cebf1724f4745c1606f7302b69c091",
+      "bytes": 1549
+    },
     "skills-library/help-topics.json": {
       "sha256": "ac2eead43be0b18b684883dd855e844679f36d18b3e226e464e65bee3eedc763",
       "bytes": 47438
     },
     "skills-library/implementation-status.json": {
-      "sha256": "981ac3cea125ea3d074c14160ea742cc05ef84a7717c91d1c77c3be806ed657c",
-      "bytes": 44247
+      "sha256": "2c62fbffd5bb29028fd36721ecd6f8c55930ba32efa5b9d12488313ec66da47a",
+      "bytes": 51124
     },
     "skills-library/index.html": {
-      "sha256": "73793f3e65e1e43f8324596673021a35ca3c001e4615199e3b9c86d5faf9cbd4",
-      "bytes": 180730
+      "sha256": "ae961f9d79db7d73b380181f7ee51098553e860b342c1d282653ac00c5fea84b",
+      "bytes": 186116
     },
     "skills-library/library.css": {
       "sha256": "1123eee574233354de46ed3193f0713007b165f988c5439dd6dd3e6602863ea1",
@@ -3659,9 +3859,25 @@
       "sha256": "9ac2d496cc30c0ce1ba364b175c9c910ac2b9c93c8ae9c10008f17343962e6f6",
       "bytes": 349087
     },
+    "solution-focused-observation/content.js": {
+      "sha256": "13fed7a82a1af4354e6ae35a79725e358e7b2db75b5912c5f916a502ad1173ae",
+      "bytes": 47127
+    },
+    "solution-focused-observation/index.html": {
+      "sha256": "6646f9b5f19f7cb6cd6562ef8d27b65d56bb09e39a6d87c7ae6bf177ca4b96c6",
+      "bytes": 1601
+    },
     "style.css": {
       "sha256": "b92e1b58cdec117ff52cdf1415607beee22f595fcc1d698c07c9185a002c7325",
       "bytes": 8481
+    },
+    "task-focused-attention/content.js": {
+      "sha256": "29d69169a3d1aaf76b645a4129c21014a796609738892d4a89d58e3690a8bfe8",
+      "bytes": 49928
+    },
+    "task-focused-attention/index.html": {
+      "sha256": "c741fce74328e8349b9829789f60d8ea91e509af23b08a61a277016f9426e76f",
+      "bytes": 1583
     },
     "toolmap.js": {
       "sha256": "1b51faf8bfae063e560768be6f49a3fbb22e1ba6024ec9c6039fa90a21cec38f",
@@ -3680,12 +3896,12 @@
       "bytes": 4229
     },
     "urge-visual/controller.js": {
-      "sha256": "2c0d5b107df521544ee1751fd907eb3b13ac8a4f0449acb11ce123b51a3d5342",
-      "bytes": 30970
+      "sha256": "f47de8462a2976f57156eab8049c8dfbacb8bad6c02aa983cdac1e7513a072dd",
+      "bytes": 31535
     },
     "urge-visual/index.html": {
-      "sha256": "2635916f2dd647ed0916b0c3e5d3b0cde25901308afe11c08629345206cbbb3e",
-      "bytes": 2737
+      "sha256": "dbdeb0d181e1246e42f64ff87192b37b4e47b95ac2bc64c9f40a653c591976eb",
+      "bytes": 3096
     },
     "urge-visual/manual-pause.js": {
       "sha256": "f3af494ac180da2ab0ad17c5d8f20ead65916e7a79338ee33f2649b478c525a6",
@@ -3732,8 +3948,8 @@
       "bytes": 4483
     },
     "worry-visual/controller.js": {
-      "sha256": "8e6c727441772cf1e36e9eef8d7e862136f570411cec4a5c2c2d7818a98d1e28",
-      "bytes": 31642
+      "sha256": "19a61f7a30855278ac0ee0e062f9c4f4859afc5e34d7a63ed1147fb2fe3f7791",
+      "bytes": 32207
     },
     "worry-visual/default-setting.js": {
       "sha256": "8e890446fd232fcdc7bb49f0e4dd7ac14a5c6f7f49d04fb41c90c79e05034fb7",
@@ -3744,8 +3960,8 @@
       "bytes": 451
     },
     "worry-visual/index.html": {
-      "sha256": "cf31e6a0cdfe5c2a7ee3d0dba3fec44ddb8addb3a689a4d780507b2f36bcda31",
-      "bytes": 4676
+      "sha256": "c36bd92053734d0f1a39e20fec4a370ee30a52c12efe32bbb48ad9d3014d1506",
+      "bytes": 5029
     },
     "worry-visual/optional-review.js": {
       "sha256": "b81a5a92bf6576766c698202ab5346105c2c0fde67305370feadcd827903bad7",
@@ -3755,8 +3971,8 @@
   "archives": [
     {
       "path": "site-runtime.zip",
-      "sha256": "c5ef715ec771a3669ee2a70eeb7f94e6aa4819366f7b20a7fa95e3c5e3af4291",
-      "bytes": 1302344,
+      "sha256": "ecbdb852d54ed60fbef3396cdefb16f90ca6c3c42c99fd19f13563243593b763",
+      "bytes": 1388037,
       "files": [
         ".nojekyll",
         "accepting-uncertainty/content.js",
@@ -3838,6 +4054,7 @@
         "assets/interpersonal-troubleshooting-shared.js",
         "assets/interpersonal-troubleshooting.css",
         "assets/interpersonal.css",
+        "assets/legacy-practice-narration.js",
         "assets/library-home.js",
         "assets/loving-kindness-model.js",
         "assets/loving-kindness-practice.js",
@@ -3878,8 +4095,20 @@
         "assets/self-compassionate-behaviour-model.js",
         "assets/self-compassionate-behaviour-practice.js",
         "assets/self-compassionate-behaviour.css",
+        "assets/self-reinforcement-model.js",
+        "assets/self-reinforcement-practice.js",
+        "assets/self-reinforcement.css",
+        "assets/shaping-self-use-model.js",
+        "assets/shaping-self-use-practice.js",
+        "assets/shaping-self-use.css",
         "assets/shared-support-chrome.js",
+        "assets/solution-focused-observation-model.js",
+        "assets/solution-focused-observation-practice.js",
+        "assets/solution-focused-observation.css",
         "assets/support-contact-spacing.css",
+        "assets/task-focused-attention-model.js",
+        "assets/task-focused-attention-practice.js",
+        "assets/task-focused-attention.css",
         "assets/validation-others-model.js",
         "assets/validation-others-practice.js",
         "assets/validation-others.css",
@@ -4018,10 +4247,14 @@
         "rules-and-assumptions/index.html",
         "self-compassionate-behaviour/content.js",
         "self-compassionate-behaviour/index.html",
+        "self-reinforcement/content.js",
+        "self-reinforcement/index.html",
         "self-soothe/content.js",
         "self-soothe/index.html",
         "self-validation/content.js",
         "self-validation/index.html",
+        "shaping-self-use/content.js",
+        "shaping-self-use/index.html",
         "skills-library/help-topics.json",
         "skills-library/implementation-status.json",
         "skills-library/index.html",
@@ -4035,7 +4268,11 @@
         "skills-map/classic.js",
         "skills-map/index.html",
         "skills-map/overview.html",
+        "solution-focused-observation/content.js",
+        "solution-focused-observation/index.html",
         "style.css",
+        "task-focused-attention/content.js",
+        "task-focused-attention/index.html",
         "toolmap.js",
         "understanding-and-naming-emotions/content.js",
         "understanding-and-naming-emotions/index.html",
@@ -4946,6 +5183,86 @@
       "files": [
         "assets/narration/audio/wise-guided--scenario.flac"
       ]
+    },
+    {
+      "path": "narration-media-37.zip",
+      "sha256": "e28dc4100b3a189882887b088a81735f20048c8fbcf4f26cebf167663e72bbdd",
+      "bytes": 6913826,
+      "files": [
+        "assets/narration/audio/urge--acted.flac",
+        "assets/narration/audio/urge--anchor--body.flac",
+        "assets/narration/audio/urge--anchor--surroundings.flac",
+        "assets/narration/audio/urge--finish.flac",
+        "assets/narration/audio/urge--intro.flac",
+        "assets/narration/audio/urge--optional--barriers.flac",
+        "assets/narration/audio/urge--optional--example.flac",
+        "assets/narration/audio/urge--optional--learn.flac",
+        "assets/narration/audio/urge--practice--notice.flac",
+        "assets/narration/audio/urge--practice--return.flac",
+        "assets/narration/audio/urge--practice--safety.flac",
+        "assets/narration/audio/urge--prepare.flac"
+      ]
+    },
+    {
+      "path": "narration-media-38.zip",
+      "sha256": "1a9a183aa10ba615a3fbdb9c017cceeca7f867ef3d77a5ae37bc1448ff7c9a54",
+      "bytes": 7023190,
+      "files": [
+        "assets/narration/audio/urge--privacy.flac",
+        "assets/narration/audio/urge--ratings--graph-description.flac",
+        "assets/narration/audio/urge--ratings--instructions.flac",
+        "assets/narration/audio/urge--timer--ended.flac",
+        "assets/narration/audio/worry--finish--now.flac",
+        "assets/narration/audio/worry--finish--review.flac",
+        "assets/narration/audio/worry--intro.flac",
+        "assets/narration/audio/worry--optional--example.flac",
+        "assets/narration/audio/worry--optional--learn.flac",
+        "assets/narration/audio/worry--prepare.flac",
+        "assets/narration/audio/worry--privacy.flac",
+        "assets/narration/audio/worry--rehearsal--1.flac"
+      ]
+    },
+    {
+      "path": "narration-media-39.zip",
+      "sha256": "75cd26183b6ff111fbfe1d4d21faad76f7e4b6852126b97c26d91b34b0dad2ad",
+      "bytes": 4712322,
+      "files": [
+        "assets/narration/audio/worry--rehearsal--2.flac",
+        "assets/narration/audio/worry--rehearsal--3.flac",
+        "assets/narration/audio/worry--response--act.flac",
+        "assets/narration/audio/worry--response--mixed.flac",
+        "assets/narration/audio/worry--response--none.flac",
+        "assets/narration/audio/worry--response--uncertain.flac",
+        "assets/narration/audio/worry--review-orient.flac",
+        "assets/narration/audio/worry--review-sort.flac",
+        "assets/narration/audio/worry--timer--instructions.flac"
+      ]
     }
-  ]
+  ],
+  "sourceRightsAcceptance": false,
+  "publicationApproved": false,
+  "catalogueCards": 83,
+  "implementationEntries": 42,
+  "libraryEntrypoints": 58,
+  "writtenIncrement": {
+    "routes": [
+      "self-reinforcement",
+      "shaping-self-use",
+      "task-focused-attention",
+      "solution-focused-observation"
+    ],
+    "newScripts": 114,
+    "newRecordings": 0,
+    "scope": "Four bounded written REVIEW drafts across three existing catalogue entries. Historical source launch/build flags are preserved; current draft overlay is not clinical, source-rights, or publication acceptance."
+  },
+  "additionalUnrecordedScripts": 703,
+  "additionalUnrecordedRoutes": 26,
+  "narrationIncrement": {
+    "routes": [
+      "worry-visual/",
+      "urge-visual/"
+    ],
+    "newRecordings": 33,
+    "scope": "Existing exact current authored passages only. Listening pauses active practice and timers; manual resume is required. No listening or browser acceptance."
+  }
 }

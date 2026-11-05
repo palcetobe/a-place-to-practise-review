@@ -5,10 +5,15 @@ from urllib.parse import urlsplit,unquote
 import hashlib,json,zipfile
 sha=lambda b:hashlib.sha256(b).hexdigest()
 raw=Path('release-manifest.json').read_bytes()
-assert sha(raw)=='f7e268126fa5e32cd54b7b9424c7992e2dfeac2f44b4a400d40517a0880abd19','Manifest hash mismatch'
+assert sha(raw)=='f8a24f3ae8409f317a442f36188536a1b3ff4e3e5cd21434f91016fcec484335','Manifest hash mismatch'
 m=json.loads(raw);root=Path('site')
 assert not root.exists(),'Refuse to merge with an existing build'
-assert m['recordings']==635 and m['coveredExerciseRoutes']==29
+assert m['recordings']==668 and m['coveredExerciseRoutes']==31
+assert m['additionalUnrecordedScripts']==703 and m['additionalUnrecordedRoutes']==26
+assert m['narrationIncrement']['newRecordings']==33
+assert m['catalogueCards']==83 and m['implementationEntries']==42 and m['libraryEntrypoints']==58
+assert m['writtenIncrement']['newScripts']==114 and m['writtenIncrement']['newRecordings']==0
+assert m['sourceRightsAcceptance'] is False and m['publicationApproved'] is False
 assert not any(m[k]for k in ['clinicalAcceptance','listeningAcceptance','browserAcceptance'])
 expected=m['files'];seen={};archives=[]
 for archive in m['archives']:
@@ -56,4 +61,4 @@ for p in root.rglob('*.html'):
   if dest.is_dir():dest=dest/'index.html'
   assert dest.is_file(),(p,value)
   count+=1
-print(json.dumps({'status':'PASS','files':len(seen),'localHtmlLinks':count,'staticBytes':sum(v['bytes']for v in seen.values()),'recordings':635,'coveredExerciseRoutes':29,'integratedNarration':True,'clinicalAcceptance':False,'listeningAcceptance':False,'browserAcceptance':False}))
+print(json.dumps({'status':'PASS','files':len(seen),'localHtmlLinks':count,'staticBytes':sum(v['bytes']for v in seen.values()),'recordings':668,'coveredExerciseRoutes':31,'integratedNarration':True,'clinicalAcceptance':False,'listeningAcceptance':False,'browserAcceptance':False}))
