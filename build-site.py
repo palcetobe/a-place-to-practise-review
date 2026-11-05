@@ -1,66 +1,59 @@
-from pathlib import Path, PurePosixPath
+"""Build and validate the exact public review tree; no network or package dependencies."""
+from pathlib import Path,PurePosixPath
+from html.parser import HTMLParser
+from urllib.parse import urlsplit,unquote
 import hashlib,json,zipfile
 sha=lambda b:hashlib.sha256(b).hexdigest()
 raw=Path('release-manifest.json').read_bytes()
-assert sha(raw)=='72729517cd641e173bef01a19292be030d69d81fc0b0310a63cbc98282d3e584','Release manifest hash mismatch'
-m=json.loads(raw);b=Path('site-runtime.zip').read_bytes()
-assert len(b)==m['archiveBytes'] and sha(b)==m['archiveSHA256']=='878f82f901418af93745352ef665e2cb001fc68a430363fc8e81413aa9f8bf1d','Static runtime archive mismatch'
-assert not Path('site').exists(),'Refuse to merge with an existing build'
-assert sum(x['bytes'] for x in m['files'].values())+len(m['files'])*2048+8*1024*1024<1000000000
-with zipfile.ZipFile('site-runtime.zip') as z:
- assert z.testzip() is None and len(z.infolist())==len(m['files'])==297 and set(z.namelist())==set(m['files'])
- for e in z.infolist():
-  p=PurePosixPath(e.filename)
-  assert not p.is_absolute() and '..' not in p.parts and '\\' not in e.filename
-  assert (e.external_attr>>16)&0o170000==0o100000,'Only regular files are allowed'
-  assert p.suffix.lower() not in {'.mp3','.mp4','.flac','.wav','.ogg','.webm','.pdf','.map'}
-  d=z.read(e);assert len(d)==m['files'][e.filename]['bytes'] and sha(d)==m['files'][e.filename]['sha256']
- for e in z.infolist():
-  p=Path('site')/e.filename;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(z.read(e))
-
-"""Verify the exact static review files before deployment."""
-from pathlib import Path, PurePosixPath
-from html.parser import HTMLParser
-from urllib.parse import urlsplit, unquote
-import hashlib,json,re,sys
-
-root=Path('site')
-manifest=json.loads(Path('release-manifest.json').read_text())
-expected=manifest['files']
-actual={}
-for p in root.rglob('*'):
-    assert not p.is_symlink(),f'Symbolic link is not permitted: {p}'
-    if p.is_file():
-        name=p.relative_to(root).as_posix()
-        assert not any(q.startswith('.') and q!='.nojekyll' for q in PurePosixPath(name).parts),name
-        b=p.read_bytes();actual[name]={'sha256':hashlib.sha256(b).hexdigest(),'bytes':len(b)}
-        assert p.suffix.lower() not in {'.mp3','.mp4','.wav','.flac','.ogg','.webm','.pdf','.map'},name
-assert actual==expected,'The static tree differs from the recorded release.'
-assert 'index.html' in actual and '.nojekyll' in actual
-assert sum(v['bytes']for v in actual.values())+len(actual)*2048+8*1024*1024<1000000000,'Published size limit exceeded.'
-
+assert sha(raw)=='f7e268126fa5e32cd54b7b9424c7992e2dfeac2f44b4a400d40517a0880abd19','Manifest hash mismatch'
+m=json.loads(raw);root=Path('site')
+assert not root.exists(),'Refuse to merge with an existing build'
+assert m['recordings']==635 and m['coveredExerciseRoutes']==29
+assert not any(m[k]for k in ['clinicalAcceptance','listeningAcceptance','browserAcceptance'])
+expected=m['files'];seen={};archives=[]
+for archive in m['archives']:
+ p=Path(archive['path']);b=p.read_bytes()
+ assert len(b)==archive['bytes']and sha(b)==archive['sha256'],p
+ with zipfile.ZipFile(p)as z:
+  assert z.testzip()is None and len(z.infolist())==len(archive['files']) and set(z.namelist())==set(archive['files']),p
+  for e in z.infolist():
+   q=PurePosixPath(e.filename)
+   assert not q.is_absolute()and '..'not in q.parts and '\\'not in e.filename,e.filename
+   assert not any(v.startswith('.')and v!='.nojekyll'for v in q.parts),e.filename
+   assert(e.external_attr>>16)&0o170000==0o100000,e.filename
+   assert e.filename not in seen and e.filename in expected,e.filename
+   d=z.read(e);assert {'sha256':sha(d),'bytes':len(d)}==expected[e.filename],e.filename
+   if q.suffix=='.flac':assert q.parts[:3]==('assets','narration','audio')and d.startswith(b'fLaC'),e.filename
+   else:assert q.suffix.lower()not in {'.mp3','.mp4','.wav','.ogg','.webm','.pdf','.map'},e.filename
+   seen[e.filename]=expected[e.filename]
+ archives.append(p)
+assert seen==expected,'Archive tree does not match manifest'
+assert sum(v['bytes']for v in seen.values())+len(seen)*2048+8*1024*1024<1000000000,'Pages size limit exceeded'
+# Verification is complete before writing any output.
+for p in archives:
+ with zipfile.ZipFile(p)as z:
+  for e in z.infolist():
+   dst=root/e.filename;dst.parent.mkdir(parents=True,exist_ok=True);dst.write_bytes(z.read(e))
 class Links(HTMLParser):
-    def __init__(self):super().__init__();self.links=[]
-    def handle_starttag(self,tag,attrs):
-        a=dict(attrs)
-        for name in ['href','src','poster']:
-            if name in a:self.links.append((tag,name,a[name]))
-
-checked=0
+ def __init__(self):super().__init__();self.links=[]
+ def handle_starttag(self,tag,attrs):
+  a=dict(attrs)
+  for attr in ['href','src','poster']:
+   if attr in a:self.links.append((tag,attr,a[attr]))
+count=0
 for p in root.rglob('*.html'):
-    text=p.read_text();parser=Links();parser.feed(text)
-    assert not re.search(r'<base\b',text,re.I),str(p)
-    assert 'public-review-paths.js' in text,str(p)
-    for tag,attr,value in parser.links:
-        if not value or value.startswith('#'):continue
-        u=urlsplit(value)
-        if u.scheme or u.netloc:
-            assert tag=='a' and attr=='href' and u.scheme in {'https','http','mailto','tel'},(p,value)
-            continue
-        assert not value.startswith('/'),(p,'Origin-root URL would escape the project',value)
-        target=(p.parent/unquote(u.path)).resolve()
-        assert target==root.resolve()or root.resolve()in target.parents,(p,value)
-        if target.is_dir():target=target/'index.html'
-        assert target.is_file(),(p,'Missing local dependency',value)
-        checked+=1
-print(json.dumps({'status':'PASS','files':len(actual),'localHtmlLinks':checked,'staticBytes':sum(v['bytes']for v in actual.values()),'clinicalAcceptance':False,'browserAcceptance':False,'integratedNarration':False}))
+ text=p.read_text();parser=Links();parser.feed(text)
+ assert '<base 'not in text.lower()and 'public-review-paths.js'in text,p
+ for tag,attr,value in parser.links:
+  if not value or value.startswith('#'):continue
+  u=urlsplit(value)
+  if u.scheme or u.netloc:
+   assert tag=='a'and attr=='href'and u.scheme in {'http','https','mailto','tel'},(p,value)
+   continue
+  assert not value.startswith('/'),(p,value)
+  dest=(p.parent/unquote(u.path)).resolve()
+  assert dest==root.resolve()or root.resolve()in dest.parents,(p,value)
+  if dest.is_dir():dest=dest/'index.html'
+  assert dest.is_file(),(p,value)
+  count+=1
+print(json.dumps({'status':'PASS','files':len(seen),'localHtmlLinks':count,'staticBytes':sum(v['bytes']for v in seen.values()),'recordings':635,'coveredExerciseRoutes':29,'integratedNarration':True,'clinicalAcceptance':False,'listeningAcceptance':False,'browserAcceptance':False}))

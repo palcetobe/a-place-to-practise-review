@@ -1,17 +1,15 @@
-# A Place to Practise: public written review
+# A Place to Practise: public review draft
 
 This static site is a review draft. The current searchable skills library is the default entrance and Home destination. Its approved 15-topic help menu, skill-name search and approach filter remain. The optional Hide placeholders checkbox shows only entries with a linked written practice; it does not imply clinical approval. Earlier goal walkthrough links and all current written practice routes remain accessible. The catalogue contains 83 cards; it is not a completed 83-skill treatment library. Some resources are planning placeholders or explicitly unavailable references.
 
-Clinical, accessibility, browser and source-rights acceptance remain open. The methods have distinct source populations, prerequisites and limits, described within each resource. No blanket age or treatment-suitability claim is made.
+This review build keeps the current guided layouts and adds optional draft recordings directly beside exact matching authored passages: 635 recordings across 29 exercises. Select Listen to start. Pause, Resume, Replay and Stop are available. No narration plays automatically. Changing views, hiding the page, editing notes or leaving stops narration. Personal writing is never used for narration or sent for speech generation.
 
-Narration is not connected in this written build. Unreviewed recordings are separate. Disabled narration controls are not evidence of playable or approved audio. PDF downloads, selected artwork, comparison packages and internal review records are withheld with explicit notices.
+This is partial coverage, not a fully narrated or clinically accepted library. Twenty-two newer routes have 589 prepared narration scripts but no recording in the inspected archive. Worry Time, Urge Surfing, Work Through a Looping Thought, Thought Record and Saying No remain without connected narration in this stage. Four changed privacy scripts and six Interpersonal privacy/close scripts are withheld. No listening approval or clinical approval is implied. Automated decode and fixture tests are not human listening or browser acceptance.
 
-Writing and temporary shortcuts follow each tool's stated behavior. Explicitly copied or downloaded notes remain outside the page after clearing. The site is not a monitored service and does not send answers to a therapist. Hosting services receive ordinary page and asset requests. A noindex instruction is not access control.
+The site is not monitored. Hosting services receive ordinary page and static-asset requests. Optional notes retain each tool's stated lifetime. Copies or downloads you request remain outside the page after clearing. Noindex is not access control.
 
-## Verify and deploy
+## Build
 
-This compact repository stores the exact sanitized site source in `site-runtime.zip`. Run `python3 build-site.py` from a clean checkout. It verifies the manifest and archive, safely extracts the static source into `site/`, then checks every file, local HTML dependency and static size. The script refuses to merge into an existing `site/` directory. The Pages workflow uploads only `site/`. GitHub Pages must be configured to use GitHub Actions. No custom domain or DNS change is included.
+Run `python3 build-site.py` in a clean checkout. The script verifies every archive, exact static file hashes, safe paths and local HTML links before writing `site/`. The Pages workflow uploads only `site/`. No additional software packages or account access are needed. Every media ZIP is below GitHub's individual-file size limit. All recordings are unchanged FLAC bytes from the existing recording packages; no voice was regenerated.
 
-The site uses relative paths and a project-base helper, so the same files support both an origin root and a GitHub project path. No backend or package installation is required. Hosted browser verification is still required after any deployment.
-
-For an intended update, edit the extracted source, regenerate the runtime archive and release manifest, and update the pinned manifest/archive hashes in the build script; changing it does not constitute clinical, listening or publication-rights approval. No licence grant covering third-party material is included. Public references and adaptation limits remain within the resources.
+The release manifest must be regenerated deliberately after any change. It is integrity evidence, not listening, clinical, accessibility or source-rights acceptance. Browser verification, including mobile playback, remains required before acceptance. The draft retains sources and adaptation limits within each resource. No licence grant covering third-party material is included.
