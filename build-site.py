@@ -2,13 +2,13 @@ from pathlib import Path, PurePosixPath
 import hashlib,json,zipfile
 sha=lambda b:hashlib.sha256(b).hexdigest()
 raw=Path('release-manifest.json').read_bytes()
-assert sha(raw)=='8bdc227ae6d2023190cc76ffc0604cd5c542fe03e3b3f15dfc8a280fdab62073','Release manifest hash mismatch'
+assert sha(raw)=='72729517cd641e173bef01a19292be030d69d81fc0b0310a63cbc98282d3e584','Release manifest hash mismatch'
 m=json.loads(raw);b=Path('site-runtime.zip').read_bytes()
-assert len(b)==m['archiveBytes'] and sha(b)==m['archiveSHA256']=='4aeb5d84b0ea392aad7f1233e062abc2a9de46db1aa8450c2f7adb265c967987','Static runtime archive mismatch'
+assert len(b)==m['archiveBytes'] and sha(b)==m['archiveSHA256']=='878f82f901418af93745352ef665e2cb001fc68a430363fc8e81413aa9f8bf1d','Static runtime archive mismatch'
 assert not Path('site').exists(),'Refuse to merge with an existing build'
 assert sum(x['bytes'] for x in m['files'].values())+len(m['files'])*2048+8*1024*1024<1000000000
 with zipfile.ZipFile('site-runtime.zip') as z:
- assert z.testzip() is None and len(z.infolist())==len(m['files'])==296 and set(z.namelist())==set(m['files'])
+ assert z.testzip() is None and len(z.infolist())==len(m['files'])==297 and set(z.namelist())==set(m['files'])
  for e in z.infolist():
   p=PurePosixPath(e.filename)
   assert not p.is_absolute() and '..' not in p.parts and '\\' not in e.filename

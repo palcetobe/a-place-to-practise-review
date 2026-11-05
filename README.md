@@ -1,6 +1,6 @@
 # A Place to Practise: public written review
 
-This static site is a review draft. It preserves the goal-first walkthrough, skills library, and current written practice routes. The catalogue contains 83 cards; it is not a completed 83-skill treatment library. Some resources are planning placeholders or explicitly unavailable references.
+This static site is a review draft. The current searchable skills library is the default entrance and Home destination. Its approved 15-topic help menu, skill-name search and approach filter remain. The optional Hide placeholders checkbox shows only entries with a linked written practice; it does not imply clinical approval. Earlier goal walkthrough links and all current written practice routes remain accessible. The catalogue contains 83 cards; it is not a completed 83-skill treatment library. Some resources are planning placeholders or explicitly unavailable references.
 
 Clinical, accessibility, browser and source-rights acceptance remain open. The methods have distinct source populations, prerequisites and limits, described within each resource. No blanket age or treatment-suitability claim is made.
 

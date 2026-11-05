@@ -1,6 +1,6 @@
 {
   "schema": "public-written-review-v1",
-  "releaseDate": "2026-11-04",
+  "releaseDate": "2026-11-05",
   "status": "review-draft",
   "clinicalAcceptance": false,
   "browserAcceptance": false,
@@ -30,8 +30,8 @@
       "bytes": 1204
     },
     "app.js": {
-      "sha256": "7be588fcc7c94e49101c1d7e3cc22ad4b0a0d353e9974fbbdf8f91894f820ebf",
-      "bytes": 25821
+      "sha256": "306cf410828714eddfddc8221d59b6ff7315fd45f22a85cfb156808f9ccaf120",
+      "bytes": 25859
     },
     "assertive-criticism/content.js": {
       "sha256": "c0c1e26631bb48b86991bb7aa53212f45ed5eb68fbad4f8cee107714872c4e7c",
@@ -316,6 +316,10 @@
     "assets/interpersonal.css": {
       "sha256": "3fe04bca7699c1db66afc55dd7c453831bccc92548cf9b8bc4bbc16911f59be3",
       "bytes": 2686
+    },
+    "assets/library-home.js": {
+      "sha256": "8ad61d5e29c56739e95560b423583ae82a5b1ae75d938e1b043b3081bf822293",
+      "bytes": 849
     },
     "assets/loving-kindness-model.js": {
       "sha256": "c7c2b322a99d3cc37a1f17f5d06349856e4ffd01512ed580b607ba88cfc882b5",
@@ -718,8 +722,8 @@
       "bytes": 1437
     },
     "index.html": {
-      "sha256": "a480c2a0492fe9452ac11468195e8ef69653879c73612adb49aba2ea1f898fbd",
-      "bytes": 3109
+      "sha256": "55b9866f5def5ef5218e557092ef5a04980622d0b5159219e191875b7d27ce06",
+      "bytes": 3352
     },
     "interpersonal-dearman/content.js": {
       "sha256": "727b459df4bebaf05b94bf4fcfa098bf2d5267850df0def8accaaa8ab859676d",
@@ -1058,16 +1062,16 @@
       "bytes": 41591
     },
     "skills-library/index.html": {
-      "sha256": "108564f25fd057d40f2473d386ef8f505ae02b304ab4c52795709400ec148a0d",
-      "bytes": 179184
+      "sha256": "32a6105c550737c6ce11d612e27575f4380ceaf3657463e792970f1c9e96185f",
+      "bytes": 179566
     },
     "skills-library/library.css": {
-      "sha256": "4819a7fbf644d45a4fdbc3e67d08f9ea70002350a42cf1c2073688719ab6a84d",
-      "bytes": 5535
+      "sha256": "1123eee574233354de46ed3193f0713007b165f988c5439dd6dd3e6602863ea1",
+      "bytes": 6025
     },
     "skills-library/library.js": {
-      "sha256": "d684b20dea79689fc7e8de5c26d0b07fc6a9170633dbddbdede10517044436f5",
-      "bytes": 2962
+      "sha256": "fc2421cab3c34caa1b8f0a5f0a252699601bdf5475544ae9143ef16adabb5a50",
+      "bytes": 3357
     },
     "skills-library/search-index.json": {
       "sha256": "fe834cfa036af6e1de0b993946508fb95f4481ba8da2fe8e055ae9d215206e32",
@@ -1194,6 +1198,8 @@
       "bytes": 1426
     }
   },
-  "archiveSHA256": "4aeb5d84b0ea392aad7f1233e062abc2a9de46db1aa8450c2f7adb265c967987",
-  "archiveBytes": 1220930
+  "archiveSHA256": "878f82f901418af93745352ef665e2cb001fc68a430363fc8e81413aa9f8bf1d",
+  "archiveBytes": 1225427,
+  "navigationEntrance": "skills-library/",
+  "placeholderFilter": "optional; off by default; current linked written drafts only"
 }
